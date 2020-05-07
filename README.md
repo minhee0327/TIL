@@ -24,8 +24,8 @@
 
 ### 프론트엔드
 
-- [HTML](https://bit.ly/2Wggp85)
-- CSS/SASS
+- [HTML&CSS](https://bit.ly/2Wggp85)
+- SASS
 - JavaScript
 - React
 - Vue
