@@ -5,7 +5,7 @@
 - 목표: 6월 말일까지 1분기 동안 학습한 것들 리뷰 & 머리에 입력.
 <hr>
 
-### CS(컴퓨터 공학)
+### 컴퓨터 공학
 
 - [Computuer Architecture](https://bit.ly/2YE9ZRD)
 - Operating System
