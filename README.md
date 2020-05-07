@@ -27,6 +27,9 @@
 - HTML
 - CSS/SASS
 - JavaScript
+- React
+- Vue
+- TypeScript
 - Markdown
 - Git
 - mini-project
