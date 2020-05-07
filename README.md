@@ -7,7 +7,7 @@
 
 ### CS(컴퓨터 공학)
 
-- [Computuer Architecture](https://github.com/minhee0327/fc-review/tree/master/01_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%B5%ED%95%99/01_Computer%20Architecture)
+- [Computuer Architecture](https://bit.ly/2YE9ZRD)
 - Operating System
 - System Programming
 - Python & Web
