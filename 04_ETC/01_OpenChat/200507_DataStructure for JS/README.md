@@ -1,0 +1,4 @@
+- [참조사이트: 7 JavaScript data structures you must know](https://www.educative.io/blog/javascript-data-structures)
+- JS도 자료구조 자체는 다른 언어와 크게 다르지 않았다.
+- 다만, JS로 문제를 풀어보려니 **JS**에 대한 학습량이 **매우 부족함**  을 느꼈다.
+- 추후(06월 이후) 에 JS 로 알고리즘 문제도 조금씩 풀어보면 좋겠다는 생각이 든다. 
