@@ -35,4 +35,4 @@
 
 ### ETC
 
-- Open Chat
+- [Open Chat](https://bit.ly/2zpO0Dd)
