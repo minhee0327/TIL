@@ -1,0 +1,73 @@
+body {
+    /* 
+    각 브라우저 마다 body 요소가 다른 값을 가지고 있을 수 있기 때문에
+    초기화 해서 사용해야한다. 0은 단위 사용하지 않는다.
+    reset.css(나중에)파일로 관리하게 될 영역
+    */
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+자손요소 .continaer-left에 높이에 의해 자동으로 설정됨
+높이 결정은 되도록 하위요소부터 관리하는 편으로.
+
+css 작성시 되도록 html 순서에 맞게 작성하는 것이 유지보수에 좋다.
+[부모-자식-자식...][부모 -자식].....순
+*/
+
+.header {
+    /* width: 100%; */
+    /* height: 75px; */
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.container {
+    /* height: 75px; */
+    width: 980px;
+    /* container를 수평 가운데 정렬 */
+    margin: auto;
+}
+
+.container-left {
+    /* width: 370px; */
+    /* height: 75px; */
+    /* float: left; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    margin-right: 5px;
+    /*flat속성은 떠있는다는 의미, left 쪽에 떠있음*/
+    float: left;
+}
+
+/* logo의 자식(후손) 요소, 띄어쓰기로 표시*/
+.logo img {
+    /*이미지 하단에 생기는 불필요한 여백 제거*/
+    display: block;
+}
+
+.menu {
+    /*logo 와 menu가 차례로 왼쪽에서 수평정렬됨(정확히는 수평정렬이 아님! 나중에 설명함)*/
+    float: left;
+}
+
+.menu-item {
+    /*각 메뉴들을 수평 정렬하기 위해 썼는데, 정확히는 아님!! 나중에 설명!*/
+    float: left;
+    font-size: 16px;
+    padding: 8px 10px;
+    /*행간 간격 img 사이즈와 동일하게 하기 위해 작성*/
+    line-height: 1;
+}
+
+/* float:left 사용후엔 사용한 요소의 부모요소에 class=clearfix 추가 해야함. */
+/* :: 가상요소 선택자 */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
