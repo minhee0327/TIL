@@ -19,7 +19,6 @@
 - [자료구조 이론](https://bit.ly/2ZbDcne)
   - python
   - C
-  - javaScript
 - 알고리즘
 - BOJ
 
