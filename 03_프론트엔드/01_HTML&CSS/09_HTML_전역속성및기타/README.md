@@ -25,5 +25,3 @@
         - 절대 경로 & 상대경로 
         - 주석(Pass)
         - [특수기호(Entities)](https://freeformatter.com/html-entities.html)
-
-            
