@@ -22,3 +22,8 @@
             - 비대화형 컨텐츠(예div) 는 필요에 따라 tabindex를 설정할 것.
             - 논리 흐름에 방해 되서, 양수는 되도록 지양.
             - -1의 경우 포커스 되지 않음.
+        - 절대 경로 & 상대경로 
+        - 주석(Pass)
+        - [특수기호(Entities)](https://freeformatter.com/html-entities.html)
+
+            
