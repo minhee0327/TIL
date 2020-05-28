@@ -9,7 +9,7 @@
 ### 컴퓨터 공학
 
 - [Computuer Architecture](https://bit.ly/2YE9ZRD)
-- Operating System
+- [Operating System](https://bit.ly/3dmi2XX)
 - System Programming
 - Python & Web
 - C++ & 프로젝트
@@ -19,14 +19,14 @@
 - [자료구조 이론](https://bit.ly/2ZbDcne)
   - python
   - C
-- 알고리즘
+- [알고리즘](https://bit.ly/3gr1LCO)
 - BOJ
 
 ### 프론트엔드
 
 - [HTML&CSS](https://bit.ly/2Wggp85)
 - SASS
-- JavaScript
+- [JavaScript](https://bit.ly/3cdvXOq)
 - React
 - Vue
 - TypeScript
