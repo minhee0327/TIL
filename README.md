@@ -37,4 +37,4 @@
 ### ETC
 
 - [Open Chat](https://bit.ly/2zpO0Dd)
-- [Learning JavaScript](https://bit.ly/3eblmFl)
+- [Learning JavaScript](https://bit.ly/36HpGtj)
