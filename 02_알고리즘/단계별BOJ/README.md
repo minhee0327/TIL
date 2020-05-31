@@ -1,5 +1,6 @@
 # BOJ 단계별 문제 
 1. 2020년 05 월 현재 상태  
-<img src='https://ifh.cc/g/9oV8KK.png' border='0'>
+<img src='https://ifh.cc/g/9oV8KK.png' border='0'>  
+
 2. 목표: 올 하반기 이전까지 최소 하루 1문제씩 풀기  
 3. BOJ 단계별 마무리하고 다른 사이트도 조금씩 풀어보기!  
