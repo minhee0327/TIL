@@ -1,7 +1,7 @@
 # Animation & Multi Columns(다단)
 ### 1. Animation(애니메이션) 개요 - 단축
 - 요소의 애니메이션을 설정/제어
-    - [animation-name](#@12-animation-name): [@keyframes 규칙](#@1.1-keyframes-rules) 의 이름 설정 (기본값: none)
+    - [animation-name](#@12-animation-name): [@keyframes 규칙](#11-keyframes-rules) 의 이름 설정 (기본값: none)
     - [animation-duration](#@13-animation-duration): 애니메이션 지속 시간 설정(기본값: 0s )
     - [animation-timing-function](#@14-animation-timing-function): 타이밍 함수 지정 (기본값: ease)
     - [animation-delay](#@15-animation-delay): 애니메이션 대기시간 설정 (기본값: 0s)
