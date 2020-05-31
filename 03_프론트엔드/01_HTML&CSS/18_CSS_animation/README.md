@@ -1,14 +1,14 @@
 # Animation & Multi Columns(다단)
 ### 1. Animation(애니메이션) 개요 - 단축
 - 요소의 애니메이션을 설정/제어
-    - [animation-name](#@12-animation-name): [@keyframes 규칙](#11-keyframes-rules) 의 이름 설정 (기본값: none)
-    - [animation-duration](#@13-animation-duration): 애니메이션 지속 시간 설정(기본값: 0s )
-    - [animation-timing-function](#@14-animation-timing-function): 타이밍 함수 지정 (기본값: ease)
-    - [animation-delay](#@15-animation-delay): 애니메이션 대기시간 설정 (기본값: 0s)
-    - [animation-iteration-count](#@16-animation-iteration-count): 애니메이션 반복횟수 설정 (기본값: 1)
-    - [animation-direction](#@17-animation-direction): 애니메이션 반복방향 설정(기본값: normal)
-    - [animation-fill-mode](#@18-animation-fill-mode): 애니메이션 전후 상태(위치)설정(기본값: none)
-    - [animation-play-state](#@19-animation-play-state): 애니메이션 재생과 정지 설정(기본값: running)
+    - [animation-name](#12-animation-name): [@keyframes 규칙](#11-keyframes-rules) 의 이름 설정 (기본값: none)
+    - [animation-duration](#13-animation-duration): 애니메이션 지속 시간 설정(기본값: 0s )
+    - [animation-timing-function](#14-animation-timing-function): 타이밍 함수 지정 (기본값: ease)
+    - [animation-delay](#15-animation-delay): 애니메이션 대기시간 설정 (기본값: 0s)
+    - [animation-iteration-count](#16-animation-iteration-count): 애니메이션 반복횟수 설정 (기본값: 1)
+    - [animation-direction](#17-animation-direction): 애니메이션 반복방향 설정(기본값: normal)
+    - [animation-fill-mode](#18-animation-fill-mode): 애니메이션 전후 상태(위치)설정(기본값: none)
+    - [animation-play-state](#19-animation-play-state): 애니메이션 재생과 정지 설정(기본값: running)
     ```css
     .box{
         aniation: 애니메이션이름 지속시간 [타이밍함수 대기시간 반복횟수 전후상태 재생/정지];
