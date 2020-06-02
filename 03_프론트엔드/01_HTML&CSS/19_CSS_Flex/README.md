@@ -2,24 +2,24 @@
 ## 1. flex 개요
 - 요소의 크기가 불분명하거나 동적인 경우에도, 각 요소를 정렬할 수 있는 효율적인 방법을 제공.
 - 2개의 개념으로 나뉨
-    - [Container](#1.1-container-속성): 
+    - [Container](#11-container-속성): 
         - items를 감싸는 부모요소, 각 item을 정렬하기위해 필수!
         - 속성
-            - [display](#1.1.1-display): flex container 정의
-            - [flex-flow](#1.1.3-flex-flow) (단축)
+            - [display](#111-display): flex container 정의
+            - [flex-flow](#113-flex-flow) (단축)
                 - flex-direction:flex items의 주축(main-axis)설정
                 - flex-wrap: flex items 여러 줄묶음(줄바꿈)설정
-            - [justify-content](#1.1.4-justify-content): 주축(main-axis) 정렬방법 설정
-            - [align-content](#1.1.5-align-content): 교차축(cross-axis) 정렬 방법 설정(2줄 이상)
-            - [align-items](#1.1.6-align-items): 교차축(corss-axis)에서 items의 정렬방법 설정(1줄)
+            - [justify-content](#114-justify-content): 주축(main-axis) 정렬방법 설정
+            - [align-content](#115-align-content): 교차축(cross-axis) 정렬 방법 설정(2줄 이상)
+            - [align-items](#116-align-items): 교차축(corss-axis)에서 items의 정렬방법 설정(1줄)
     - [items](#1.2-flex-items-속성): 
         - 속성
-            - [order](#1.2.1-order)
-            - [flex](#1.2.2-flex)
-                - [flex-grow](#1.2.3-flex-grow)
-                - [flex-shrink](#1.2.4-flex-shrink)
-                - [flex-basis](#1.2.5-flex-basis)
-            - [align-self](#1.2.6-align-self)
+            - [order](#121-order)
+            - [flex](#122-flex)
+                - [flex-grow](#123-flex-grow)
+                - [flex-shrink](#124-flex-shrink)
+                - [flex-basis](#125-flex-basis)
+            - [align-self](#126-align-self)
 
 ### 1.1 Container 속성
 #### 1.1.1 display
