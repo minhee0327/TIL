@@ -11,8 +11,8 @@
 - [Computuer Architecture](https://bit.ly/2YE9ZRD)
 - [Operating System](https://bit.ly/3dmi2XX)
 - System Programming
-- Python & Web
 - C++ & 프로젝트
+- [Python & Web](https://bit.ly/2Mp5uD4)
 
 ### 알고리즘/자료구조
 
@@ -25,12 +25,13 @@
 ### 프론트엔드
 
 - [HTML&CSS](https://bit.ly/2Wggp85)
-- SASS
 - [JavaScript](https://bit.ly/3cdvXOq)
+- BootStrap
+- Markdown
+- SASS
 - React
 - Vue
 - TypeScript
-- Markdown
 - Git
 - mini-project
 
