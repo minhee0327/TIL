@@ -13,3 +13,7 @@
             - 관리자 페이지
             - wizwig (summer note) version 3 사용해서
             - 아직까지 기반 플러그인들이 3에 있는 경우가 많다.
+
+3. admin page & template search keyword
+    - sb admin
+    - bootstrap free template
