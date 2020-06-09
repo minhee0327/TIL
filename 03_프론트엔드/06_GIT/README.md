@@ -42,6 +42,8 @@
             1. 깃 초기화 한 폴더 내부(boxiting-cat)에 README.md, index.html 파일생성
             2. 원하는 파일만 선택하기   
             `git add README.md`
+            2-1. 전체 파일 선택하기
+            `git add .`
             3. 메세지를 달아 커밋으로 만들기   
             `git commit -m "프로젝트 설명 파일 추가"`
             4. 생성한 커밋 보기  
