@@ -26,8 +26,8 @@
 
 - [HTML&CSS](https://bit.ly/2Wggp85)
 - [JavaScript](https://bit.ly/3cdvXOq)
-- BootStrap
-- Markdown
+- [BootStrap](https://bit.ly/3h3qopn)
+- [Markdown](https://bit.ly/2YgF6AX)
 - SASS
 - React
 - Vue
