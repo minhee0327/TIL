@@ -59,7 +59,7 @@
             2. 내 컴퓨터 git 초기화한 폴더에 GitHub 저장소 주소 알려주기  
             `git remote add [원하는이름] https://github.com/아이디/repository이름.git`  
             `git remote add origin https://github.com/아이디/repository이름.git`  
-            3. 만든 커밋 푸시하기
+            3. 만든 커밋 푸시하기  
             ```git push origin master```
                 - origin(remote) 에 master(local (브랜치)에 저장된commit들이 올라가짐)
             4. GitHub 사이트에 올라간 커밋 확인
@@ -97,5 +97,105 @@
         - 두 브랜치 충돌(conflict) 해결하기
         - 예의바른 병합요청(pull request) 보내기
         - 다른 사람 저장소 통으로 복제하기: 포크(fork)
+
     2. add 와 commit
-        
+        - 깃에서 커밋이란?
+            1. 변경사항의 모음이 아님! => 하나의 최종코드 모음!!
+            2. 다만 기존 커밋과 비교해서 변경된 파일이 아니면 '변경되지 않았다' 고 저장해서 용량이 무겁지 않다.
+                - SVN은 바로 이전 커밋과의 변경사항만 저장
+                - 그래서 커밋당 용량은 더 가볍지만, 한 버전을 보려면 처음부터 계산해야 하기 때문에 느리다.
+                - Git은 바로 이전 커밋만 보면 된다. (속도 빠르다.)
+
+    3. 브랜치
+        - 왜 같이 작업하려면 여러줄로 커밋을 쌓아야할까?
+            - 한 줄에서 작업하면 충돌이 날 수 있기 때문!
+            - 동시에 똑같은 코드를 고칠 가능성이 있으니까
+        - n 줄로 쌓고 나중에 합칠수있을까?
+            - ok. 충돌이 나더라도, 합치는 시점에 명시적으로 충돌 해결 가능.
+        - source tree
+            1. **master**: 내 컴퓨터에만 있는 내용
+            2. **origin/master**: 원격/내컴퓨터에 있는 내용
+            3. **HEAD**: 내가 지금 작업하는 로컬 브랜치
+                - 많은 브랜치들 중에서도 내가 어떤 브랜치에 있는지 확인가능
+            4. 브랜치 카테고리에 내가 작성한 브랜치만 보입니다.
+                - 원격저장소 카테고리를 클릭해보자
+                - 여기에서 내가만든 브랜치 뿐만 아니라 동료 브랜치도 확인가능.
+                - 동료 브랜치 더블클릭 시 checkout할 수 있는 창 뜸.
+                - checkout하면, 브랜치 카테고리에 동료 브랜치도 확인 가능.
+        - 브랜치 만들기  
+            - cat 브랜치를 현재 시점에 만들어라. (HEAD가 있는 위치에)  
+            `git branch cat`
+            - cat 브랜치로 이동해라.(HEAD가 cat으로 이동)   
+            `git checkout cat`
+            - commit을 진행하면, cat 브랜치는 새 커밋을 가리키고,
+            기존 master브랜치는 그대로 있다. (HEAD가 cat에 있기 때문)
+        - 실습
+            - boxiting-cat저장소: master에서 feat/main-page 브랜치생성
+                - feat/기능이름
+                    - 이렇게 쓰면 feat가 폴더처럼 되어있어서 많은 브랜치 관리에 유용하다.
+                    - 한 사람이 개발하는 기능 브랜치
+                    - 혹은 fix/버그이름, hotfix/급한버그
+                    - 작업이 끝나면, dev(혹은 master)브랜치로 PR 보내기
+                    - dev 브랜치에 큼지막한 작업 모두 머지되면 release, latest로 머지시키고 이를 실서버에 배포
+                    - 직접 커밋은 feat(혹은 fix, hotix)브랜치에만 합니다.
+                    - dev나 master, release 브랜치에는 직접 커밋하지 말고 머지만합니다.
+                - source tree에서 현재 브랜치 확인하고 싶다면, bold(두껍게)처리된 부분을 읽으면 된다.
+            - 커밋추가
+            - boxiting-oct저장소: pull받기
+            - master에서 feat/commit 브랜치 생성
+            - 커밋 추가
+
+    4. merge(합치기)
+        1. flow
+            - master 브랜치의 최신 커밋(base)에 
+            - oct 브랜치의 최신 커밋(compare,head)을 합치려고 한다.
+            - 기능 개발이 마무리 되면, 기능 개발한 것을 master 브랜치에 합친다.
+        2. rule
+            - base가 될 master 브랜치로 이동(head를 master로 이동)
+                - source tree에서는 master를 더블클릭
+            - compare 브랜치(oct)를 나와 합치고 싶다고 명령 `git merge oct`
+                - source tree에서는 해당 브랜치 우측 클릭 후 병합
+        3. 종류
+            - fast-forward merge
+            - merge-commit
+            - conflict
+    
+    5. conflict(충돌)
+        - 머지할 때 두 버전이 같은 곳을 수정했다면 이를 수동으로 고쳐줘야한다.
+        - 아래와 같이 base 에서 작성한 곳과, compare에서 작성한 곳이 충돌이 나는데 수동으로 <<<<>>>> 를 지우고 고쳐주면 된다.
+            ```
+            <<<<HEAD
+            [base]
+            ===
+            [compare]
+            >>>>
+            ```
+    6. fork: 저장소 통채로 복제하기
+        - 오픈소스에 기여하기 위해 collaboratos 등록을 부탁하지 않더라도,  
+        내 저장소에 해당 저장소를 복제(fork)해서 그곳에서 자유롭게 커밋, 푸쉬후  
+        해당 저장소에 merge해달라고 요청(pull request)하면 된다.
+
+    7. pull request
+        - rule
+            - 머지하고 싶은 두 브랜치를 선택하고
+            - 어떤 변경을 했는지 제목과 내용에 쓰면 된다.
+            - 단일 저장소에서 보낼수도 있고, 포크한 저장소에서 보낼수도 있다.
+            - 코드 함께 작성하는 동료 있다면, 최대한 직접 머지하는건 피하고, 풀 리퀘스트를 통해 하자.
+            - 동료가 내 풀 리퀘(PR)을 보고 **코드 리뷰** 가능!
+            - 동료의 PR에 수정이 필요하다면 댓글 달아 change request를 보낼 수 있음
+            - 오픈 소스에 PR 보낼때에는 기여 안내문서(contribution guide line)를 반드시 참고할 것!!
+        - 방법
+            - repository에서 new pull request 클릭
+            - base와 compare 위치 검토 후, create pull request
+            - pull request를 받은 사람은 pull requests 창으로 가서
+            - file changed를 클릭하면 3가지 옵션이 있다.
+                - comment
+                - approve
+                - request change 
+    8. 추가 키워드
+        - rebase: 묵은 커밋을 새 커밋처럼 조작
+        - amend: 깜빡하고 수정 못한 파일이 있어서, 방금 만든 커밋에 살짝 추가
+        - cherry-pick: 저 커밋 하나만 떼서 지금 브랜치에 붙이고 싶을 때
+        - reset: 옛날 커밋으로 시간 돌리기
+        - reverse: 이 커밋의 변경사항을 되돌리고 싶다.
+        - stash: 변경사항을 잠시 킵.아직 커밋 안함.
