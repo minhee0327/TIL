@@ -40,8 +40,8 @@
         - 커밋(commit) == 하나의 버전
         - 실습
             1. 깃 초기화 한 폴더 내부(boxiting-cat)에 README.md, index.html 파일생성
-            2. 원하는 파일만 선택하기   
-            `git add README.md`
+            2. 원하는 파일만 선택하기 /전체 파일 선택하기  
+            `git add README.md` /  `git add .`
             3. 메세지를 달아 커밋으로 만들기   
             `git commit -m "프로젝트 설명 파일 추가"`
             4. 생성한 커밋 보기  
@@ -199,3 +199,4 @@
         - reset: 옛날 커밋으로 시간 돌리기
         - reverse: 이 커밋의 변경사항을 되돌리고 싶다.
         - stash: 변경사항을 잠시 킵.아직 커밋 안함.
+
