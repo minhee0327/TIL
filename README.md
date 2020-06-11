@@ -25,7 +25,7 @@
 - [JavaScript](https://bit.ly/3cdvXOq)
 - [BootStrap](https://bit.ly/3h3qopn)
 - [Markdown](https://bit.ly/2YgF6AX)
-- [SASS](https://bit.ly/2Yt44x5)
+- [SASS(SCSS)](https://bit.ly/2Yt44x5)
 - [Git](https://bit.ly/2XQcOyc)
 - React
 - Vue
