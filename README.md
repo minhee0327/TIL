@@ -17,10 +17,7 @@
 ### 알고리즘/자료구조
 
 - [자료구조 이론](https://bit.ly/2ZbDcne)
-  - python
-  - C
 - [알고리즘](https://bit.ly/3gr1LCO)
-- BOJ
 
 ### 프론트엔드
 
@@ -28,11 +25,11 @@
 - [JavaScript](https://bit.ly/3cdvXOq)
 - [BootStrap](https://bit.ly/3h3qopn)
 - [Markdown](https://bit.ly/2YgF6AX)
-- SASS
+- [SASS](https://bit.ly/2Yt44x5)
+- [Git](https://bit.ly/2XQcOyc)
 - React
 - Vue
 - TypeScript
-- Git
 - mini-project
 
 ### ETC
