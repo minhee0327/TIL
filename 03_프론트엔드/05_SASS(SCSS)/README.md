@@ -49,8 +49,8 @@
 - [재활용(Mixins)](#37-재활용)
 - [확장](#38-확장)
 - [함수](#39-함수)
-- 조건과 반복
-- 내장함수
+- [조건과 반복](#310-조건과-반복)
+- [내장함수](#311-내장함수)
 
 
 #### 3.3 중첩
@@ -450,10 +450,219 @@
     }
     ```
 
+- if(함수)
+    - 조건의 값(true, false)에 따라 두개의 표현식중 하나만 반환
+    - 삼항연산자와 유사
+    - if (조건, 표현식1, 표현식2)
+    ```SCSS
+    $width:500px;
+    div{
+        width: if($width>300px, $width, null);
+    }
+    ```
 [목차][TOC]
 
+---
 
+#### 3.10 조건과 반복
+- 조건
+    - @if(지시어)
+    - 조건에 따른 분기처리 가능
+    - if문과 유사
+    - 같이 사용할수있는 지시어 @else, @else if
+    - (지시어) 생략가능
+    - 예제1
+        ```SCSS
+        @function limitSize($size){
+            @if ($size>=0 and $size<=200px){
+                @return 200px;
+            }@else{
+                @return 800px;
+            }
+        }
 
+        div{
+            width: limitSize(180px);
+            height: limitSize(340px);
+        }
+        ```
+        ```CSS
+        //compile to
+        div {
+            width: 200px;
+            height: 800px;
+        }
+        ```
+    - 예제2
+        ```SCSS
+        @mixin positionCenter($w, $h, $p:absolute){
+            @if ($p==absolute or $p ==fixed or not $p==relative or not $p==static){
+                width: if(unitless($w), #{$w}px, $w);
+                height: if(unitless($h), #{$h}px, $h);
+                position: $p;;
+                top:0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+        .box1{
+            @include positionCenter(10px, 20px)
+        }
+        .box2{
+            @include positionCenter(50,50, fixed)
+        }
+        .box3{
+            @include positionCenter(100,200,relative)
+        }
+        ```
+        ```CSS
+        .box1 {
+            width: 10px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .box2 {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        ```
+- 반복문
+    1. @for
+    - 관례상 변수로 `$i` 많이 사용
+    - 사용법
+        ```SCSS
+        // through
+        // 종료 만큼 반복
+        @for $변수 from 시작 through 종료{
+
+        }
+        // to
+        // 종료 직전까지 반복
+        @for $변수 from 시작 to 종료{
+            //반복내용
+        }
+        ```
+    - 예시
+        ```SCSS
+        @for $i from 1 through 3{
+            .box:nth-child(#{$i}){
+                width: 20px * $i;
+            }
+        }
+        ```
+        ```CSS
+        .box:nth-child(1) {
+            width: 20px;
+        }
+
+        .box:nth-child(2) {
+            width: 40px;
+        }
+
+        .box:nth-child(3) {
+            width: 60px;
+        }
+        ```
+
+    2. @each
+        - List, Map 데이터 반복해야할때 사용
+        - for in 문과 유사
+        ```SCSS
+        @each $변수 in 데이터{
+            //반복내용
+        }
+        ```
+        - 사용예시1(List)
+        ```SCSS
+        $fruits: (apple, banana, mango, orange);
+
+        .fruits{
+            @each $fruit in $fruits{
+                $index: index($fruits, $fruit);
+                li:nth-child(#{$index}){
+                    left: 50px * $index;
+                    background: url("/images/#{$fruit}.png")
+                }
+            }
+        }
+        ```
+        ```CSS
+        .fruits li:nth-child(1) {
+            left: 50px;
+            background: url("/images/apple.png");
+        }
+        .fruits li:nth-child(2) {
+            left: 100px;
+            background: url("/images/banana.png");
+        }
+        .fruits li:nth-child(3) {
+            left: 150px;
+            background: url("/images/mango.png");
+        }
+        .fruits li:nth-child(4) {
+            left: 200px;
+            background: url("/images/orange.png");
+        }
+        ```
+        - 사용예시2(Map)
+        ```SCSS
+        $fruits-data:(
+            apple:korea,
+            orange:china,
+            banana:japan
+        );
+
+        @each $key, $value in $fruits-data{
+            // map-keys($fruits-data) =>(apple, orange, banana)
+            // map-values($fruits-data) => (korea, china, japan)
+            $key-list : map-keys($fruits-data);
+            $index : index($key-list, $key);
+            .box-#{$key}{
+                width: $index * 100px;
+                background: url("/images/#{$value}.png");
+            }
+        }
+        ```
+        ```CSS
+        .box-apple {
+            width: 100px;
+            background: url("/images/korea.png");
+        }
+
+        .box-orange {
+            width: 200px;
+            background: url("/images/china.png");
+        }
+
+        .box-banana {
+            width: 300px;
+            background: url("/images/japan.png");
+        }
+        ```
+    3. @while
+
+---
+
+#### 3.11 내장함수
+- [Sass Build-in-Functions](https://sass-lang.com/documentation/modules)
+
+[목차][TOC]
+
+---
 
 
 [Heropy님](https://heropy.blog/2018/01/31/sass/)
