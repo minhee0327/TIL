@@ -17,7 +17,7 @@ if (false) console.log('항상 실행 X');
 
 
 
-console.log('--------------example02: falsy & truethy ---------------');
+console.log('--------------example02: falsy & truthy ---------------');
 // 표현식이 거짓으로 평가될때 Falsy: false, 0, '', null, undefined, NaN
 if (false) console.log(false);
 if (0) console.log(0);
