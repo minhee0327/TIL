@@ -18,6 +18,7 @@
 
 - [자료구조 이론](https://bit.ly/2ZbDcne)
 - [알고리즘](https://bit.ly/3gr1LCO)
+- [BOJ유형별](https://bit.ly/37GwEiJ)
 
 ### 프론트엔드
 
