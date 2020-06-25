@@ -107,6 +107,11 @@ let avg = numbers2.reduce((accumulator, current, index, array) => {
 console.log('평균값: ', avg)
 
 
+console.log('------------ includes ----------');
+const animals = ['냐옹이', '멍뭉이', '거북이', '너구리'];
+console.log(animals.includes('거북이'));
+console.log(animals.includes('노트북'));
+
 
 // 자주 사용되는 내장함수 키워드 정리
 // shift, pop 

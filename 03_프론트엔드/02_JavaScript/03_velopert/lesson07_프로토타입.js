@@ -24,7 +24,6 @@ Animal.prototype.say = function () {
 }
 Animal.prototype.sharedValue = 1
 
-
 const dog = new Animal('강아지', '멍멍이', '왈왈!');
 const cat = new Animal('고양이', '냐옹이', '야옹야옹');
 
@@ -56,4 +55,3 @@ console.log(d.hasOwnProperty)
 
 // 프로토 타입 체인을 모두 검사하면서, 성능 저하의 원인을 발생시킬 수 있음
 // 이때 .hasOwnProperty 메소드를 이용하여 프로토타입 체인상 어딘가에 존재하는지 확인이 가능함.
-// 
