@@ -36,10 +36,10 @@
 - [Markdown](https://bit.ly/2YgF6AX)
 - [SASS(SCSS)](https://bit.ly/2Yt44x5)
 - [Git](https://bit.ly/2XQcOyc)
-- React
+- [React](https://bit.ly/3eLgtmL)
 - Vue
 - TypeScript
-- mini-project
+- [mini-project](https://bit.ly/2ZfTeLa)
 
 ### ETC
 
