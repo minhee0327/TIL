@@ -15,8 +15,14 @@
 
 2. 환경설정
     - jsx: javaScript확장버전(리엑트 컴포넌트에서 XML형식의 값을 반환)
+        - 리액트에서 생김새 정의
+        - XML 형태로 코드 작성하면 babel이 JSX를 javaScript로 변환.
     - webpack: 여러가지 파일을 한 개로 결합하기 위해
-    - babel: jsx를 비롯한 새로운 자바스크립트 문법을 사용하기위해.
+    - babel: 
+        - jsx를 비롯한 새로운 자바스크립트 문법을 사용하기위해.
+        - javaScript 문법 확장
+        - 최신문법이나 편의상 사용하거나 실험적인 자바스크립트 문법을 정식 자바스크립트 형태로 변환
+        - 구형 브라우저 환경에서도 실행
     - node.js: node --version으로 확인 (babel, webpack 이 런타임인 node.js 기반으로 만들어져있음.)
     - yarn(npm 개선버전) : yarn --version으로 확인 (없을 경우 설치)
     - code editor: vsCode로 진행
@@ -27,3 +33,9 @@
 
 3. My first react Component
     - index.js 의 ReactDom.render의 역할: 브라우저에 있는 실제 DOM내부에 리액트 컴포넌트를 렌더링하겠다.
+    - 항상 닫히는 태그로(self closing tag)사용
+    - 항상 하나의 태그로 감싸진 상태로 리턴.
+    - 단순히 감싸기위한 용도로 `<div>` 쓰지 않고, Fragment(`<></>`)사용하면된다.
+    - Fragment는 브라우저 상에서 따로 별도 엘리먼트로 나타나지 않음
+    - 변수를 보여줘야할 때는 {}로 감싸서 보여주기
+    -     
