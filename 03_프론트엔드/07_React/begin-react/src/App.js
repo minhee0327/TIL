@@ -1,6 +1,6 @@
 import React from 'react';
-import Hello from './Hello.js';
-import Wrapper from './Wrapper.js'
+import Hello from './Component/Hello.js';
+import Wrapper from './Component/Wrapper.js'
 import './App.css'
 
 function App() {
