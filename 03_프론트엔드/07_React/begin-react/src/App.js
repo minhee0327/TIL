@@ -1,5 +1,6 @@
 import React from 'react';
 import Hello from './Hello.js';
+import Wrapper from './Wrapper.js'
 import './App.css'
 
 function App() {
@@ -14,13 +15,14 @@ function App() {
   }
 
   return (
-    <>
-      <Hello />
+    <Wrapper>
+      <Hello name="react" color="red" isSpecial />
+      <Hello color='blue' />
       {/* 1. inline 선언방식 */}
       <div style={style}>{name}</div>
       {/* 2. class 선언방식 : className으로 설정*/}
       <div className="gray-box"></div>
-    </>
+    </Wrapper>
   );
 }
 
