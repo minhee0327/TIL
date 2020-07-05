@@ -138,13 +138,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Project2_c_기본내용정리\01_variable.c" />
-    <ClCompile Include="..\..\Project2_c_기본내용정리\02_기본입출력.c" />
     <ClCompile Include="02_입출력.c" />
+    <ClCompile Include="03_연산자.c" />
+    <ClCompile Include="04_조건문.c" />
+    <ClCompile Include="05_반복문.c" />
+    <ClCompile Include="06_함수.c" />
     <ClCompile Include="main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="02_입출력2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
