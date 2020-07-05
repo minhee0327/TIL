@@ -1,7 +1,6 @@
-import React, { useRef, useReducer, useMemo, useCallback } from 'react';
+import React, { useReducer, useMemo } from 'react';
 import UserList from './Component/UserList';
 import CreateUser from './Component/CreateUser';
-import useInputs from './hooks/useInputs';
 
 function countAcitveUsers(users) {
   console.log('활성 사용자 수를 세는중...');
@@ -62,25 +61,12 @@ export const UserDispatch = React.createContext(null);
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const nextId = useRef(4);
-
-  const [{ username, email }, onChange, reset] = useInputs({
-    username: '',
-    email: ''
-  })
   const { users } = state;
+  const count = useMemo(() => countAcitveUsers(users), [users]);
 
-  const onCreate = useCallback(() => {
-    dispatch({ type: 'CREATE_USER', user: { id: nextId.current, username, email } })
-    reset();
-    nextId.current += 1;
-  }, [username, email, reset])
-
-
-  const count = useMemo(() => countAcitveUsers(users), [users])
   return (
     <UserDispatch.Provider value={dispatch}>
-      <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate} />
+      <CreateUser />
       <UserList users={users} />
       <div>활성화된 user수 :{count}</div>
     </UserDispatch.Provider>
