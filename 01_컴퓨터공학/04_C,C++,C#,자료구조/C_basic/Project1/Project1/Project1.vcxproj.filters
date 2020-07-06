@@ -33,5 +33,11 @@
     <ClCompile Include="06_함수.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="07_배열.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08_포인터.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
