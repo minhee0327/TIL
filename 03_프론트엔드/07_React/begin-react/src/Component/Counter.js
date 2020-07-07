@@ -2,6 +2,20 @@ import React, { Component } from 'react';
 
 
 class Counter extends Component {
+    constructor(props) {
+        super(props);
+        console.log("constructor");
+    }
+    static getDerivedStateFromProps(nextProps, prevState) {
+        console.log("getDerivedStateFromProps");
+        if (nextProps.color !== prevState.color) {
+            return { color: nextProps.color };
+        }
+        return null;
+    }
+    // componentDidMount : 외부 라이브러리 연동을 하거나, 해당 컴포넌트에서 필요로하는 데이터 요청
+    // axios, fetch, 등을 통해 ajax요청을 하거나, DOM의 속성을 읽거나 직접 변경하는 작업 진행에 필요.
+
     state = {
         counter: 0,
         fixed: 1
