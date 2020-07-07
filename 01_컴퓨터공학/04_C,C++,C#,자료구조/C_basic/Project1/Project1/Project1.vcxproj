@@ -145,6 +145,9 @@
     <ClCompile Include="06_함수.c" />
     <ClCompile Include="07_배열.c" />
     <ClCompile Include="08_포인터.c" />
+    <ClCompile Include="09_문자.c" />
+    <ClCompile Include="10_문자열.c" />
+    <ClCompile Include="11_컴퓨터 변수처리.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

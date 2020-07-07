@@ -39,5 +39,14 @@
     <ClCompile Include="08_포인터.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="09_문자.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10_문자열.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11_컴퓨터 변수처리.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
