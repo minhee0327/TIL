@@ -1,6 +1,6 @@
 # 컴퓨터 기초
 
-### 컴퓨터 공학
+### [컴퓨터 공학](https://bit.ly/38O80xj)
 
 - [Computuer Architecture](https://bit.ly/2YE9ZRD)
 - [Operating System](https://bit.ly/3dmi2XX)
@@ -8,13 +8,15 @@
 - [C++ & 프로젝트](https://bit.ly/2YVleVn)
 - [Python & Web](https://bit.ly/2Mp5uD4)
 
-### 알고리즘/자료구조
+### [알고리즘/자료구조](https://bit.ly/3gxql46)
 
 - [자료구조 이론](https://bit.ly/2ZbDcne)
 - [알고리즘](https://bit.ly/3gr1LCO)
 - [BOJ유형별](https://bit.ly/37GwEiJ)
+- [SWexpert](https://bit.ly/2BP8WVY)
+- [Programmers](https://bit.ly/2Zb5cXu)
 
-### 프론트엔드
+### [프론트엔드](https://bit.ly/2Z9IUpp)
 
 - [HTML&CSS](https://bit.ly/2Wggp85)
 - [JavaScript](https://bit.ly/3cdvXOq)
@@ -25,6 +27,7 @@
 - [React](https://bit.ly/3eLgtmL)
 - [Vue](#)
 - [TypeScript](#)
+- [Webpack](#)
 - [mini-project](https://bit.ly/2ZfTeLa)
 
 ### ETC
@@ -34,6 +37,7 @@
 - [Network](https://bit.ly/2YXhzXo)
 
 ---
+
 - 필요한 부분은 중간중간 업데이트 하기.
 - 목표: 7월 중순, 말까지 1분기 동안 학습한 것들 리뷰 & 머리에 뼈대 잡기
 - 혹시라도 문제가 있는 자료가 있다면 꼭 얘기해주세요!
@@ -45,4 +49,3 @@
       - (지금 생각해보니.. 비동기 처리, 최적화, 내 노트북의 메모리 문제 등 문제점이 아-주 많이 보인다.. 나중에 수정해봐야지)
       - 특히 javaScript에 대한 낮은 이해 기반으로 프레임워크를 다뤄서 프로젝트가 아쉬웠다.
       - 그래서 언어 이외에도 좀 더 기반지식을 닦을 필요성을 느꼈고, 07월까지 빡공해서 좋은 결과를 내고 싶다!
-    
