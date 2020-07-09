@@ -48,5 +48,11 @@
     <ClCompile Include="11_컴퓨터 변수처리.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="12_다차원배열과 포인터배열.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13_동적메모리할당.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

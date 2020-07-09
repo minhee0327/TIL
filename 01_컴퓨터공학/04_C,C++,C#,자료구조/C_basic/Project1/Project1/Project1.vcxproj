@@ -148,6 +148,8 @@
     <ClCompile Include="09_문자.c" />
     <ClCompile Include="10_문자열.c" />
     <ClCompile Include="11_컴퓨터 변수처리.c" />
+    <ClCompile Include="12_다차원배열과 포인터배열.c" />
+    <ClCompile Include="13_동적메모리할당.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
