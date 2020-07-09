@@ -5,12 +5,14 @@ for t in range(1, int(input())+1):
 
     while len(lst):
         max_idx = lst.index(max(lst))
-
-        profit += max(lst) * max_idx - sum(lst[:max_idx])
-        if lst == lst[max_idx:]:
-            break
-        else:
+        if max_idx == 0:
             lst = lst[max_idx+1:]
+        else:
+            profit += max(lst) * max_idx - sum(lst[:max_idx])
+            if lst == lst[max_idx:]:
+                break
+            else:
+                lst = lst[max_idx+1:]
     print("#{} {}".format(t, profit))
 
 
