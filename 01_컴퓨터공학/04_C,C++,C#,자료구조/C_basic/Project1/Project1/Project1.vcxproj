@@ -150,6 +150,9 @@
     <ClCompile Include="11_컴퓨터 변수처리.c" />
     <ClCompile Include="12_다차원배열과 포인터배열.c" />
     <ClCompile Include="13_동적메모리할당.c" />
+    <ClCompile Include="14_함수포인터.c" />
+    <ClCompile Include="15_구조체.c" />
+    <ClCompile Include="16_파일입출력.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

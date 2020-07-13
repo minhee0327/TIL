@@ -54,5 +54,14 @@
     <ClCompile Include="13_동적메모리할당.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="14_함수포인터.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15_구조체.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16_파일입출력.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
