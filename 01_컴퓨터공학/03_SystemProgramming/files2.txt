@@ -1,0 +1,10 @@
+-rw-rw-r--  1 ubuntu ubuntu     8 Mar 24 13:53 link2.txt
+drwxrwxr-x  2 ubuntu ubuntu  4096 Mar 24 15:00 linkdata
+-rwxrwxr-x  1 ubuntu ubuntu  8168 Mar 24 11:33 loop
+-rw-rw-r--  1 ubuntu ubuntu    78 Mar 24 12:23 loop.c
+-rw-r--r--  1 root   root       6 Mar 20 13:17 pid_max~
+drwxrwxr-x  2 ubuntu ubuntu  4096 Apr  6 02:36 programming
+-rwxrwxr-x  1 ubuntu ubuntu  8648 Apr  1 05:36 sharedmemory
+-rw-rw-r--  1 ubuntu ubuntu   746 Apr  1 05:36 sharedmemory.c
+drwxrwxr-x  2 ubuntu ubuntu  4096 Apr  3 02:44 shell
+drwxrwxr-x  2 ubuntu ubuntu  4096 Apr  3 02:25 shellbck
