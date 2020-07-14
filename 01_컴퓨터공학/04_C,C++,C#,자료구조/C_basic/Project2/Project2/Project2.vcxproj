@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{407A81AF-ECFD-4842-975E-B791027B1039}</ProjectGuid>
-    <RootNamespace>Project1</RootNamespace>
+    <ProjectGuid>{E6F16EC0-B99B-48D3-89A9-DA064B8379ED}</ProjectGuid>
+    <RootNamespace>Project2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,26 +138,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="02_입출력.c" />
-    <ClCompile Include="03_연산자.c" />
-    <ClCompile Include="04_조건문.c" />
-    <ClCompile Include="05_반복문.c" />
-    <ClCompile Include="06_함수.c" />
-    <ClCompile Include="07_배열.c" />
-    <ClCompile Include="08_포인터.c" />
-    <ClCompile Include="09_문자.c" />
-    <ClCompile Include="10_문자열.c" />
-    <ClCompile Include="11_컴퓨터 변수처리.c" />
-    <ClCompile Include="12_다차원배열과 포인터배열.c" />
-    <ClCompile Include="13_동적메모리할당.c" />
-    <ClCompile Include="14_함수포인터.c" />
-    <ClCompile Include="15_구조체.c" />
-    <ClCompile Include="16_파일입출력.c" />
-    <ClCompile Include="17_전처리기.c" />
+    <ClCompile Include="01_자료구조개요.c" />
+    <ClCompile Include="02_연결리스트.c" />
     <ClCompile Include="main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="17_example01.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
