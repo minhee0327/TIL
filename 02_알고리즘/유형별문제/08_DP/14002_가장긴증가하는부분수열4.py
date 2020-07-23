@@ -1,25 +1,34 @@
 N = int(input())
-A = list(map(int, input().split()))
-DP = [1] * N
-DP_lst = []
+A = [0] + list(map(int, input().split()))
 
-for i in range(1, N):
-    temp = []
-    for j in range(i):
-        if A[j] < A[i] and A[j] not in temp:
-            DP[i] += 1
-            temp.append(A[j])
-    temp.append(A[i])
-    DP_lst.append(temp)
+DP = [0] * (N+1)  # 길이정보
+rev = [-1] * (N+1)  # 역추적할 정보(idx)
+
+for i in range(1, N+1):
+    for j in range(1, i, 1):
+        if A[i] > A[i-j] and DP[i] < DP[i-j]:
+            DP[i] = DP[i-j]
+            rev[i] = i-j
+    DP[i] += 1
+
 
 print(max(DP))
+
+ans = []
 max_idx = DP.index(max(DP))
-for i in DP_lst[max_idx-1]:
-    print(i, end=" ")
+
+while max_idx != -1:
+    ans.append(A[max_idx])
+    max_idx = rev[max_idx]
+ans.reverse()
+
+print(' '.join(map(str, ans)))
 
 '''
-[Code Review]
-- 주어진 testcase는 잘 돌아가는데,
-- 뭔가 부족한 코드인거같다. 틀렸다고 뜬다.
-- 차일 수정예정
+[CODE REVIEW]
+https://br-brg.tistory.com/14
+- 수열을 역추적하는 것은 처음 접했다...ㅠㅠ
+- 처음 했을때, 계속 최대 길이는 구했는데, 그 경로를 출력하는것에 너무 애를 먹어서
+- 좋은 방법을 찾아보니, 역추적이라는 개념을 보았다.
+- 다시 반복해서 봐야할 듯한 문제!!ㅠㅠ
 '''
