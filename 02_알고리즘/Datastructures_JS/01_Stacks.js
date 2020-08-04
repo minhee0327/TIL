@@ -1,6 +1,4 @@
 //function : push, pop, peek, size
-//회문(palindrome)을 stack으로 구현해보기
-//js에는 이미 stack의 기능을하는 내장함수가 있지만, 구현을 해보고 싶어 연습.
 
 const Stack = function () {
   this.count = 0;
