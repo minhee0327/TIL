@@ -69,5 +69,3 @@
           - 라이브러리(실습)
             - eslint-config-airbnb 로 진행해봄
         - Snippet
-   4. 이후 프로젝트는 local 에서만 진행하고 remote에 올리지 않기
-   - 대신 예전에 진행했던 [링크](https://github.com/minhee0327/react-tutorial)
