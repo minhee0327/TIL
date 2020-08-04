@@ -10,8 +10,8 @@
 
 ### [알고리즘/자료구조](https://bit.ly/3gxql46)
 
-- [자료구조 이론](https://bit.ly/2ZbDcne)
-- [알고리즘](https://bit.ly/3gr1LCO)
+- [자료구조&알고리즘(python)](https://bit.ly/33Cl8VJ)
+- [자료구조&알고리즘(js)](https://bit.ly/2Pn0yAb)
 - [BOJ유형별](https://bit.ly/37GwEiJ)
 - [SWexpert](https://bit.ly/2BP8WVY)
 - [Programmers](https://bit.ly/2Zb5cXu)
@@ -32,7 +32,5 @@
 
 ### ETC
 
-- [Open Chat](https://bit.ly/2zpO0Dd)
 - [Learning JavaScript](https://bit.ly/36HpGtj)
 - [Network](https://bit.ly/2YXhzXo)
-
