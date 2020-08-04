@@ -2,16 +2,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/react
 # Edit at https://www.toptal.com/developers/gitignore?templates=react
 
-### project ###
-*error-catch*
-*useful-tools*
-*styling-with-sass*
-*styling-with-css-module*
-*styling-with-styled-components*
-*api-integrate*
-*router-tutorial*
-*learn-redux*
-*learn-redux-middleware*
 
 ### react ###
 .DS_*
