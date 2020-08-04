@@ -7,3 +7,7 @@
     - [예전 사이트 모습](https://heropcode.github.io/GitHub-Responsive/)
     - [강사님 git(완성모습)](https://github.com/HeropCode/GitHub-Responsive)
     - 연습 focus: 반응형 웹페이지
+    
+2. TodoList: React 로 구현한 TodoList
+    - styled components 활용하기
+    - Context API활용해서 상태 전역으로 관리하기
