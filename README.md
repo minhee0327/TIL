@@ -1,4 +1,4 @@
-# 컴퓨터 기초
+# TOC(table of contents)
 
 ### [Computer Science](https://bit.ly/38O80xj)
 
