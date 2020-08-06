@@ -61,7 +61,7 @@ const HashTable = function () {
     if (storage[index] === undefined) {
       return undefined;
     } else {
-      for (let i = 0; i < sotrage[index].length; i++) {
+      for (let i = 0; i < storage[index].length; i++) {
         if (storage[index][i][0] === key) {
           return storage[index][i][1];
         }
@@ -69,3 +69,17 @@ const HashTable = function () {
     }
   };
 };
+
+console.log(hash("baeu", 14));
+console.log(hash("fido", 14));
+console.log(hash("rex", 14));
+console.log(hash("tux", 14));
+
+let ht = new HashTable();
+ht.add("beau", "person");
+ht.add("fido", "dog");
+ht.add("rex", "dinosour");
+ht.add("tux", "penguin");
+console.log(ht.lookup("tux"));
+
+ht.print();
