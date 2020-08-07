@@ -1,33 +1,25 @@
-export const createPromiseThunk = (type, promiseCreator) => {
-  const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
+import { call, put } from "redux-saga/effects";
 
-  return (param) => async (dispatch) => {
-    dispatch({ type, param });
+export const createPromiseSaga = (type, promiseCreator) => {
+  const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
+  return function* saga(action) {
     try {
-      const payload = await promiseCreator(param);
-      dispatch({ type: SUCCESS, payload });
+      const payload = yield call(promiseCreator, action.payload);
+      yield put({ type: SUCCESS, payload });
     } catch (e) {
-      dispatch({ type: ERROR, payload: e, error: true });
+      yield put({ type: ERROR, error: true, payload: e });
     }
   };
 };
-
-const defaultIdSelector = (param) => param;
-export const createPromiseThunkById = (
-  type,
-  promiseCreator,
-  idSelector = defaultIdSelector
-) => {
+export const createPromiseSagaById = (type, promiseCreator) => {
   const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
-
-  return (param) => async (dispatch) => {
-    const id = idSelector(param);
-    dispatch({ type, meta: id });
+  return function* saga(action) {
+    const id = action.meta;
     try {
-      const payload = await promiseCreator(param);
-      dispatch({ type: SUCCESS, payload, meta: id });
+      const payload = yield call(promiseCreator, action.payload);
+      yield put({ type: SUCCESS, payload, meta: id });
     } catch (e) {
-      dispatch({ type: ERROR, error: true, payload: e, meta: id });
+      yield put({ type: ERROR, error: true, payload: e, meta: id });
     }
   };
 };
@@ -118,3 +110,40 @@ export const handleAsyncActionsById = (type, key, keepData = false) => {
     }
   };
 };
+
+/*
+//redux- thunk
+export const createPromiseThunk = (type, promiseCreator) => {
+  const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
+
+  return (param) => async (dispatch) => {
+    dispatch({ type, param });
+    try {
+      const payload = await promiseCreator(param);
+      dispatch({ type: SUCCESS, payload });
+    } catch (e) {
+      dispatch({ type: ERROR, payload: e, error: true });
+    }
+  };
+};
+
+const defaultIdSelector = (param) => param;
+export const createPromiseThunkById = (
+  type,
+  promiseCreator,
+  idSelector = defaultIdSelector
+) => {
+  const [SUCCESS, ERROR] = [`${type}_SUCCESS`, `${type}_ERROR`];
+
+  return (param) => async (dispatch) => {
+    const id = idSelector(param);
+    dispatch({ type, meta: id });
+    try {
+      const payload = await promiseCreator(param);
+      dispatch({ type: SUCCESS, payload, meta: id });
+    } catch (e) {
+      dispatch({ type: ERROR, error: true, payload: e, meta: id });
+    }
+  };
+};
+*/
