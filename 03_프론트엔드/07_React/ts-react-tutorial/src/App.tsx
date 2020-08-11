@@ -1,13 +1,16 @@
 import React from "react";
-// import Counter from "./Counter";
-// import MyForm from "./MyForm";
-import ReducerSample from "./ReducerSample";
+import SampleReducer from "./ReducerSample";
+import { SampleProvider } from "./SampleContext";
 
 function App() {
   // const onSubmit = (form: { name: string; description: string }) => {
   //   console.log(form);
   // };
-  return <ReducerSample />;
+  return (
+    <SampleProvider>
+      <SampleReducer />
+    </SampleProvider>
+  );
 }
 
 export default App;
