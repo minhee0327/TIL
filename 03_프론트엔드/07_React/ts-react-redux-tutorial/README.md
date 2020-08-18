@@ -1,23 +1,20 @@
 # 리엑트 & 타입스크립트 (리덕스) 리뷰
 
-- 대부분 리엑트에서 했던 리덕스 과정과 비슷했는데, typesafe-actions 라이브러리를 사용하는 과정이 조금 어려웠다.
-- typesafe-actions를 사용하면 리덕스를 사용하는 프로젝트에서 액션생성함수와 리듀서를 깔끔하게 작성할수 있는 장점이 있었지만
-- 한편 버전을 맞추는데 문제가 조금 있었기 때문.
-- 확실히 라이브러리를 사용한만큼 코드량이 많이 줄고, 읽기 편한 장점이 있지만
-- 계속해서 라이브러리의 버전이 업데이트 되면서 각 모듈간의 의존성을 체크해가야하는 불편함이 있었다.
-- 해당 프로젝트를 실습하기 위해서는 대부분 버전을 downgrade로 해결해야했는데
-- package.json을 직접 버전을 하나하나 만져서 리빌드 해서 해결했다.
-- 사실 더 좋은 방법이 있을지도 모르겠지만...일단 내가 해결한 방법은 dwongrade
-- (직접 건든 부분만 적어두겠다..ㅠㅠ 혹시라도 나처럼 오래 찾아볼 사람들 시간 단축 바라면서)
-- package.json수정부분
-  ```json
-   "dependencies": {
-    "typesafe-actions": "4.4.2",
-    "typescript": "~3.7.2"
-   }
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.23.0",
-    "@typescript-eslint/parser": "^2.23.0"
-  }
-  ```
-- 개인적인 소견은... spring때 의존성 모듈다운받으면서 버전맞추다가 마음이 아팠던기억이....휴...비슷한 느낌이다...ㅎ
+- typesafe-actions 사용시 버전 충돌 해결
+  - node 13.1.0
+  - typesafe-actions@4.2.2
+  - "colorette": "^1.2.0" css import 과정에서 node13버전과충돌 (node 14버전일 경우 괜찮을듯)
+  - "autoprefixer": @9.8.4 버전으로 다운그레이드(css import에 error)
+  - eslint기능 끄고싶어서 : .eslintignore추가
+  - typesafe-actions랑 eslint랑 문제가 계속 생기는 것 같아서 devDependencies에 아래추가
+    - "@typescript-eslint/eslint-plugin": "^2.23.0",
+    - "@typescript-eslint/parser": "^2.23.0"
+  - yarn.lock 파일 remove 했기때문에 yarn 으로 설치 시 문제 발생여지 있음
+  - npm으로 돌릴것
+- 해당 실습폴더로 진행한 것
+  1. Counter
+  - 기본 TypeScript와 Context API활용
+  1. TodoList
+  - Redux사용하고, 모듈분리(모듈 분리하는 과정에서 typesafe-actions 라이브러리 활용)
+  1. GIT HUB에 가입된 아이디 입력시, 아이디, 이름, 프로필사진 및 블로그주소를 볼수있음.
+  - Redux Thunk, Reudx Saga 활용하고 유지보수를 위한 리팩토링 진행
