@@ -10,3 +10,10 @@ function solution(s) {
     return false;
   }
 }
+
+function solution(s){
+  let p_cnt = s.toLowerCase().split('').filter(x=>x==='p').length
+  let y_cnt = s.toLowerCase().split('').filter(x=>x==='y').length
+
+  return (p_cnt === y_cnt)? true: false
+}

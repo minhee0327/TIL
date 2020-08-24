@@ -47,8 +47,8 @@ function solution2(answers) {
   var max = Math.max(p1, p2, p3);
 
   if (max === p1) answer.push(1);
-  if (max === p1) answer.push(2);
-  if (max === p1) answer.push(3);
+  if (max === p2) answer.push(2);
+  if (max === p3) answer.push(3);
 
   return answer;
 }
