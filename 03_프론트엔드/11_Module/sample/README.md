@@ -17,5 +17,5 @@
     const readline = require('readline');
     ```
     - 사용자로부터 입력을 받을 수 있도록 
-    - nodeJS 모듈이기 때문에, 실행환경이 nodeJS면 바로 사용할 수 있음
+    - commonJS 모듈이기 때문에, 실행환경이 nodeJS면 바로 사용할 수 있음
     - 내장되어 있는 readline
