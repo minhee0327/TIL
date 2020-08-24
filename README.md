@@ -27,7 +27,7 @@
 - [React](https://bit.ly/3eLgtmL)
 - [Vue](https://github.com/minhee0327/basic-web-tutorial-fc/tree/master/Vue)
 - [TypeScript](https://github.com/minhee0327/basic-web-tutorial-fc/tree/master/TypeScript)
-- [Webpack](https://github.com/minhee0327/basic-web-tutorial-fc/tree/master/Webpack)
+- [Module](https://bit.ly/34tkU3s)
 - [mini-project](https://bit.ly/2ZfTeLa)
 
 ### ETC
