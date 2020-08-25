@@ -1,5 +1,5 @@
 # 웹팩의 기본 구조
-1. 웹팩의 4가지 주요속성: entry, output, loader, plugin
+1. 웹팩의 주요속성: entry, output, loader, plugin, mode
     - **entry**
         - 모듈의 의존 관계를 이해하기 위한 *시작점*
         - 웹팩에서 웹 자원을 변환하기 위한 *최초 진입점*이자, 자바스크립트 파일경로
@@ -107,6 +107,35 @@
             - 옵션으로 template옵션 사용해봄
             - build시, template.html을 기준으로 모듈 번들링된 js 파일(번들결과파일 내용들)이 script태그(혹은 link테그 등등) 에 추가됨. 또한, index.html이 dist폴더에 자동생성됨      
 
+    - **mode**
+        - pakage.json
+            - 모듈을 기록
+                - 프로젝트에서 사용하는 외부모듈을 관리할 때 모듈을 어떻게 기록
+                
+            - 프로덕션 환경과 개발환경
+                - dependencies: 어플리케이션 내부에 직접 포함되는 모듈
+                    - 예:jQuery(화면단에 보여져야함)
+                    - ```--save```
+                - devDependencies: 개발과정에 필요한 모듈
+                    - 개발 효율을 높이거나, 코드의 컨벤션 검사, 개발자 코드의 품질 높이는 등 개발 자체에 영향미치는 모듈
+                    - ```--save-dev```
+
+            - pakage.json에 모듈을 기록하게되면, 다른환경에서 다시 프로젝트를 세팅할때, 패키지를 일일이 설치하지 않아도 된다. npm으로 pakage.json에 작성된 모듈을 설치할 수 있기 때문이다. 
+            - ```npm install```만 해주면 pakage.json에 따라 모듈을 설치해준다.
+            - ```scripts```
+                ```js
+                "scripts":{
+                    "build":"webpack"
+                }
+                ```
+                ```console
+                npm run build
+                ```
+                - 터미널환경에서 위와같이 작성하면 번들링(빌드)된다.
+                - 결과는 dist 폴더에서 확인
+        - mode:'none' or 'development' or 'production'
+        - 모드 설정 하지 않으면 기본 production 모드로 작동
+
 2. 환경설정 (windows)
     1. package.json 생성
         - 프로젝트 정보 및 의존성(dependencies) 관리하는 문서
@@ -165,31 +194,4 @@
         ```
         - bundle.js 에 output 결과가 담기게 됨
 
-3. Mode
-    - pakage.json
-        - 모듈을 기록
-            - 프로젝트에서 사용하는 외부모듈을 관리할 때 모듈을 어떻게 기록
-            
-        - 프로덕션 환경과 개발환경
-            - dependencies: 어플리케이션 내부에 직접 포함되는 모듈
-                - 예:jQuery(화면단에 보여져야함)
-                - ```--save```
-            - devDependencies: 개발과정에 필요한 모듈
-                - 개발 효율을 높이거나, 코드의 컨벤션 검사, 개발자 코드의 품질 높이는 등 개발 자체에 영향미치는 모듈
-                - ```--save-dev```
 
-        - pakage.json에 모듈을 기록하게되면, 다른환경에서 다시 프로젝트를 세팅할때, 패키지를 일일이 설치하지 않아도 된다. npm으로 pakage.json에 작성된 모듈을 설치할 수 있기 때문이다. 
-        - ```npm install```만 해주면 pakage.json에 따라 모듈을 설치해준다.
-        - ```scripts```
-            ```js
-            "scripts":{
-                "build":"webpack"
-            }
-            ```
-            ```console
-            npm run build
-            ```
-            - 터미널환경에서 위와같이 작성하면 번들링(빌드)된다.
-            - 결과는 dist 폴더에서 확인
-
-    - Mode & webpack-merge
