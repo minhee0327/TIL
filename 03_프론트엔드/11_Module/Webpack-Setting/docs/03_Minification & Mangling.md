@@ -21,7 +21,7 @@
     - html-webpack-plugin설정에서 제공되는 key중 minify이라는 key가 제공됨.
     - mark up 이 생성될때 mark up 컨텐츠가 최적화되는 과정을 함께 진행함
     - 객체형태로 지정해서 선택적으로 (일부만) 최적화를 진행할 수 있다.
-    - html-webpack-plugin readme.md 문서 확인. (minify검색 상세 링크 클릭)
+    - html-webpack-plugin [readme.md](https://github.com/jantimon/html-webpack-plugin) 문서 확인. (minify검색 상세 링크 클릭)
     - 실습에서는 공백을 줄이는것, doctype을 짧게 사용하는 것, type attribute 제거 사용
     - plugin 에 minify key와 옵션 추가
       ```js
