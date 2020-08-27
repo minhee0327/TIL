@@ -139,4 +139,6 @@
               }
             }
             ```
-            - build시, dist 폴더 내부에 vender.~~~이라는 파일이 생김 확인해보면, jQuery와 관련된 내용이 담겨있음(분리 성공!)
+            - build시, dist 폴더 내부에 vender.~ 이라는 파일이 생김 확인해보면, jQuery와 관련된 내용이 담겨있음(분리 성공!)
+
+ [이전페이지](https://bit.ly/2EoeAjj)
