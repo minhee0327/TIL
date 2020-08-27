@@ -19,7 +19,7 @@
 
 - #### Caching & Webpack
 
-  - 웹팩이 번틀파일을 만드는 과정에서 caching을 효과적으로 사용하는 방법
+  - 웹팩이 번들파일을 만드는 과정에서 caching을 효과적으로 사용하는 방법
     - 모듈들을 번들파일로 만들면, 브라우저는 번들파일을 받고, 웹 어플리케이션으로 동작시킴
     - 이때, 지금까지 만든 설정파일을 기반으로 번들파일을 만들게 되면 브라우저에서는 같은 이름으로 번들파일을 호출하게 된다.
     - 그런데 브라우저가 캐싱하는 기준은 url
@@ -40,7 +40,7 @@
         ```
       - 외부 모듈이기때문에, require로 모듈을 부르고, plugin에 설정해주어야한다.
         ```js
-        const { CleanWebpackPluginb } = require('clean-webpack-plugin');
+        const { CleanWebpackPlugin } = require('clean-webpack-plugin');
         plugin: [new CleanWebpackPlugin()];
         ```
     - **contenthash**
@@ -56,7 +56,7 @@
         - 일전에 style-loader 설정해두었던 것은 주석처리 (충돌 방지)
         - link 태그 추가된 것을 확인할 수 있고, build(bundle)된 결과, main.css 파일을 확인할 수 있다.
         - css 자원은 캐싱이 되어 활용할 수 있는 형태가되고, html은 크기가 줄어든다.(style tag대신, 별도 파일 css로 변경됨.)
-        - 단, main.css로 이름이 고정되면, css파일이 변경이되어도 이전 파일을 불러온느 문제가 생기기 때문에, hash를 적용해야함
+        - 단, main.css로 이름이 고정되면, css파일이 변경이되어도 이전 파일을 불러오는 문제가 생기기 때문에, hash를 적용해야함
         - 이 때 hash를 사용해야함.
           ```js
           new MiniCssExtractPlugin({
@@ -93,7 +93,7 @@
 
       - chunkhash 실습
 
-        - runtime chunk
+        - _runtime chunk_
 
           - file name 설정
 
@@ -115,7 +115,7 @@
             },
             ```
 
-        - 벤더 chunk
+        - _벤더 chunk_
           - 벤더파일 예시(jQuery)
           - jQuery 설치
             ```
@@ -131,10 +131,10 @@
             ```js
             splitChunks:{
               cacheGroups:{
-                  commons:{
-                      test: /[\\/]node_modules[\\/]/,
-                      name: 'venders',
-                      chunks: 'all'
+                    commons:{
+                        test: /[\\/]node_modules[\\/]/,
+                        name: 'venders',
+                        chunks: 'all'
                   }
               }
             }
