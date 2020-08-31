@@ -1,12 +1,25 @@
 import 'normalize.css';
 import styles from './index.css'
 import $ from 'jquery';
+import cuteImg from './images/cute.png'
+import chickenImg from './images/chicken.svg';
 
 function component() {
     const element = document.createElement('div'); //div tag를 생성
     element.innerText = "Hello Webpack"; //div 태그 내부 글자
 
+    const imgElement = document.createElement('img');
+    imgElement.src = cuteImg;
+
+    const imgElement2 = document.createElement('img');
+    imgElement2.src = chickenImg;
+
+    console.log(cuteImg);
+    console.log(chickenImg);
     console.log(styles);
+
+    element.appendChild(imgElement);
+    element.appendChild(imgElement2);
 
     element.classList = styles.helloWebpack //div 태그 내부에 클래스로 helloWebpack의 해시값
 
