@@ -1,5 +1,5 @@
 import 'normalize.css';
-import styles from './index.css'
+import styles from './index.module.scss'
 import $ from 'jquery';
 import cuteImg from './images/cute.png'
 import chickenImg from './images/chicken.svg';

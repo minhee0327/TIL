@@ -1,0 +1,9 @@
+$font-color: green;
+
+div {
+    color: red;
+}
+
+.helloWebpack {
+    color: $font-color;
+}

@@ -15,24 +15,27 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.css$/i,
-        use: [
-          // {
-          //     loader: 'style-loader',
-          //     options: {
-          //         injectType: 'singletonStyleTag'
-          //     }
-          // },
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
+        test: /\.s?css$/i,
+        oneOf: [{
+          test: /\.module\.s?css$/,
+          use: [{
+              loader: MiniCssExtractPlugin.loader,
             },
-          },
-        ],
+            {
+              loader: 'css-loader',
+              options: {
+                modules: true,
+              },
+            },
+            'sass-loader'
+          ],
+        }, {
+          use: [
+            MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader'
+          ]
+        }]
       },
       {
         test: /\.hbs$/,
