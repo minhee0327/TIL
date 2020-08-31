@@ -1,8 +1,10 @@
 # 이미지 파일 모듈로 다루어보기(**_file-loader_**)
 
--   웹팩은 대부분의 리소스들을 모듈로 다룬다.
--   css, js 파일 뿐만아니라 이미지파일과 같은 정적인 파일또한 모듈로 다룰 수 있다.
--   다양한 모듈을 해석하기 위해 loader가 필요 (file-loader, url-loader)
+-   Intro
+
+    -   웹팩은 대부분의 리소스들을 모듈로 다룬다.
+    -   css, js 파일 뿐만아니라 이미지파일과 같은 정적인 파일또한 모듈로 다룰 수 있다.
+    -   다양한 모듈을 해석하기 위해 loader가 필요 (file-loader, url-loader)
 
 -   **file-loader**
 
@@ -19,28 +21,28 @@
         -   webpack.common.js rules 키에 추가.  
             (file-loader는 개발, 배포용 모두 사용되기 때문에 common에서 작성)
 
-                ```js
-                module.exports = {
-                    module: {
-                        rules: [
-                            {
-                                //svg확장자는 url-loader에서 다룰 예정
-                                //i의의미: 대소문자 구분 X
-                                test: /\.(png|jpe?g|gif)$/i,
-                                use: [
-                                    {
-                                        loader: 'file-loader',
-                                        options: {
-                                            // ext: 확장자 약어
-                                            name: '[contenthash].[ext]',
-                                        },
+            ```js
+            module.exports = {
+                module: {
+                    rules: [
+                        {
+                            //svg확장자는 url-loader에서 다룰 예정
+                            //i의의미: 대소문자 구분 X
+                            test: /\.(png|jpe?g|gif)$/i,
+                            use: [
+                                {
+                                    loader: 'file-loader',
+                                    options: {
+                                        // ext: 확장자 약어
+                                        name: '[contenthash].[ext]',
                                     },
-                                ],
-                            },
-                        ],
-                    },
-                };
-                ```
+                                },
+                            ],
+                        },
+                    ],
+                },
+            };
+            ```
 
         -   index.js 에서 file import 해오기
 
