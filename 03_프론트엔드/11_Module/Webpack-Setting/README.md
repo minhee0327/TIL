@@ -8,6 +8,12 @@
 
 ### [4. Mode(Development mode & Production Mode)](https://bit.ly/3jdugV4)
 
+## 웹팩 활용하기
+
+### [5. File Loader]
+
+### [6. URL Loader]
+
 #### 5. 참고
 
 - 1-4 번까지 한 페이지에 작성했는데 내용이 길어서 파일별로 분할했음.(docs폴더에 있음)
