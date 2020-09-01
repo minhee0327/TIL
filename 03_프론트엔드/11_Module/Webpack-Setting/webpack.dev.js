@@ -1,7 +1,7 @@
-const {
-  merge
-} = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
+const StyleLiintPlugin = require('stylelint-webpack-plugin');
+
 
 const config = {
   mode: 'development',
@@ -21,6 +21,9 @@ const config = {
     },
     port: 3333 //포트번호 수정
   },
+  plugins:[
+    new StyleLiintPlugin()
+  ]
 };
 
 module.exports = merge(common, config);
