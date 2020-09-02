@@ -1,7 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+  CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 const isProduction = process.env.NODE_ENV === 'PRODUCTION';
@@ -78,6 +80,11 @@ module.exports = {
           }
         }]
       },
+      {
+        test: /.js/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }
     ],
   },
   plugins: [

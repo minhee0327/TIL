@@ -4,6 +4,7 @@ import $ from 'jquery';
 // import cuteImg from './images/cute.png'
 // import chickenImg from './images/chicken.svg';
 import webpackImg from './images/webpack.svg'
+import '@babel/polyfill';
 
 function component() {
     const element = document.createElement('div'); //div tag를 생성
