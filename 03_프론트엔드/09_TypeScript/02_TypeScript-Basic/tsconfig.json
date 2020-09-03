@@ -5,7 +5,7 @@
         "module": "es6", //commonjs
         "rootDir": "src",
         "outDir": "dist",
-        "target": "es5", //es5, es2015, ..
+        "target": "es6", //es5, es2015, ..
         "sourceMap": true, //원본파일(ts)을 보고싶을 경우 true
         "removeComments": true, //주석 제거하고 browser에서 보여줌
         "noImplicitAny": true, //타입을 작성하지 않으면, 암묵적으로 any타입으로 넘어갈 수 있는데 그러지 않도록 방지 (꼭 타입설정 해야하도록)
