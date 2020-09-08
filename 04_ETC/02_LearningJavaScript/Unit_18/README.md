@@ -53,8 +53,24 @@
             -   `appendChild(삽입요소)`: 항상 마지막 요소로 추가됨.
 
 -   요소 스타일링
+
     -   DOM API만으로도 요소 스타일을 지정할 수 있지만, 직접 요소 프로퍼티를 수정하는것보다 calss를 사용하는게 좋다.
     -   요소의 스타일을 바꾸고 싶을 때, css클래스를 새로 만들고 그 클래스를 원하느 ㄴ요소에 지정.
     -   모든 요소에는 클래스를 나열하는 `classList` property가 있다.
         -   `add`메서드로 클래스를 추가할 수 있음
         -   `remove`메서드로 클래스 제거
+
+-   데이터 속성
+    -   HTML5의 데이터 속성(data-)
+    -   데이터속성의 이름은 마음대로 정해도 괜찮음 (예: `data-contain`, `data-action`, ...)
+    -   해당 요소의 dataset프로퍼티를 입력해보면 data-에 붙은 이름과 해당 값(문자열)이 객체형태로 제공된다.
+    ```js
+    const hightLightActions = document.querySelectorAll('[data-action="highlight"]');
+    hightLightActions[0].dataset;
+    // DOMStringMap {action: "highlight", containing: "unique"}
+    ```
+    -   데이터 속성 수정/추가
+        ```js
+        hightLightActions[0].dataset.containing = 'girraffe'; //수정(기존에 있는 dataset과 같은 이름이면 수정)
+        hightLightActions[0].dataset.caseSensitive = 'true'; //삭제(없으면 추가)
+        ```
