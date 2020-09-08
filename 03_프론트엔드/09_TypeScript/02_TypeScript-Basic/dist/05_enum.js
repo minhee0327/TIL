@@ -17,6 +17,6 @@ function getDiscound(v) {
 console.log(getDiscound(StarbucksGrade.GREEN));
 console.log(StarbucksGrade.GREEN);
 console.log(StarbucksGrade['GOLD']);
-console.log(StarbucksGrade['0']);
+console.log(StarbucksGrade[0]);
 console.log(StarbucksGrade);
 //# sourceMappingURL=05_enum.js.map
