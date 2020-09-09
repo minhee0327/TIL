@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ajax jQuery Test</title>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="serverInfo">
+            Server is running on <span data-replace="platform">???</span><br />
+            with Node <span data-replace="nodeVersion">???</span>.<br />
+            It has been up for <span data-replace="uptime">???</span> seconds.<br />
+        </div>
+        <script>
+            function refreshServerInfo() {
+                const $serverInfo = $('.serverInfo');
+                $.get('http://localhost:7070').then(
+                    function (data) {
+                        Object.keys(data).forEach((p) => {
+                            $(`[data-replace="${p}"]`).text(data[p]);
+                        });
+                    },
+                    function (jqXHR, textStatus, err) {
+                        console.log(err);
+                        $serverInfo.addClass('error').html(`Error connecting to server.`);
+                    },
+                );
+            }
+            refreshServerInfo();
+        </script>
+    </body>
+</html>
