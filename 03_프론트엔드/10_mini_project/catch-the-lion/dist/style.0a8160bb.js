@@ -117,159 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/Board.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.DeadZone = exports.Board = exports.Cell = void 0;
-
-var Cell =
-/** @class */
-function () {
-  function Cell(position, piece) {
-    this.position = position;
-    this.piece = piece;
-    this.isActive = false;
-    this._el = document.createElement('div');
-
-    this._el.classList.add('cell');
-  }
-
-  Cell.prototype.put = function (piece) {
-    this.piece = piece;
-  };
-
-  Cell.prototype.getPiece = function () {
-    return this.piece;
-  };
-
-  Cell.prototype.active = function () {
-    this.isActive = true;
-  };
-
-  Cell.prototype.deactive = function () {
-    this.isActive = false;
-  };
-
-  Cell.prototype.render = function () {
-    if (this.isActive) {
-      this._el.classList.add('active');
-    } else {
-      this._el.classList.remove('active');
-    }
-
-    this._el.innerHTML = this.piece ? this.piece.render() : '';
-  };
-
-  return Cell;
-}();
-
-exports.Cell = Cell; //Board는 여러 cell들의 집합으로 이루어져있다.
-
-var Board =
-/** @class */
-function () {
-  function Board() {
-    this.cells = [];
-    this._el = document.createElement('div');
-    this._el.className = 'board';
-
-    for (var row = 0; row < 4; row++) {
-      var rowEl = document.createElement('div');
-      rowEl.className = 'row';
-
-      this._el.appendChild(rowEl);
-
-      for (var col = 0; col < 3; col++) {
-        // 보드판에 기본 cell을 만드는과정, 2번째파라미터 null(아무것도 올려져 있지 않다는 뜻.)
-        var cell = new Cell({
-          row: row,
-          col: col
-        }, null);
-        this.cells.push(cell);
-        rowEl.appendChild(cell._el);
-      }
-    }
-  }
-
-  Board.prototype.render = function () {
-    this.cells.forEach(function (v) {
-      return v.render();
-    });
-  };
-
-  return Board;
-}();
-
-exports.Board = Board;
-
-var DeadZone =
-/** @class */
-function () {
-  function DeadZone(type) {
-    this.type = type;
-    this.cells = [];
-    this.deadZoneEl = document.getElementById(this.type + "_deadzone").querySelector('.card-body'); // deadzone에 올수있는 말의 개수는 4개이므로 열 4개만큼만 반복
-
-    for (var col = 0; col < 4; col++) {
-      var cell = new Cell({
-        row: 0,
-        col: col
-      }, null);
-      this.cells.push(cell);
-      this.deadZoneEl.appendChild(cell._el);
-    }
-  }
-
-  DeadZone.prototype.put = function (piece) {
-    var emptyCell = this.cells.find(function (v) {
-      return v.getPiece() == null;
-    });
-    emptyCell.put(piece);
-    emptyCell.render();
-  };
-
-  DeadZone.prototype.render = function () {
-    this.cells.forEach(function (v) {
-      return v.render();
-    });
-  };
-
-  return DeadZone;
-}();
-
-exports.DeadZone = DeadZone;
-},{}],"src/Game.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Game = void 0;
-
-var Board_1 = require("./Board");
-
-var Game =
-/** @class */
-function () {
-  function Game() {
-    //board는 계속 쓰이면서, 작업을 고정한 상태이므로, readonly 타입
-    this.board = new Board_1.Board();
-    this.upperDeadZone = new Board_1.DeadZone('upper');
-    this.lowerDeadZone = new Board_1.DeadZone('lower');
-    var boardContainer = document.querySelector('.board-container'); // console.log(boardContainer.firstChild); //text제거한후 childappend해줄것
-
-    boardContainer.firstChild.remove();
-    boardContainer.appendChild(this.board._el);
-  }
-
-  return Game;
-}();
-
-exports.Game = Game;
-},{"./Board":"src/Board.ts"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -336,32 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/bootstrap/dist/css/bootstrap.css":[function(require,module,exports) {
-
-        var reloadCSS = require('_css_loader');
-        module.hot.dispose(reloadCSS);
-        module.hot.accept(reloadCSS);
-      
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/styles/style.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/styles/style.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/index.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var Game_1 = require("./Game");
-
-require("bootstrap/dist/css/bootstrap");
-
-require("./styles/style.css");
-
-new Game_1.Game();
-},{"./Game":"src/Game.ts","bootstrap/dist/css/bootstrap":"node_modules/bootstrap/dist/css/bootstrap.css","./styles/style.css":"src/styles/style.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -565,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.ts"], null)
-//# sourceMappingURL=/src.f10117fe.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/style.0a8160bb.js.map

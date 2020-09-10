@@ -16,4 +16,3 @@
 -   모듈설치(`npm install`)후 실행(`npm run dev`)
 -   parcel의 모듈시스템은 ES6와 비슷하다고 볼 수 있다.
     -   `import`, `export`로 가져오고, 내보낼 수 있다.
-    -
