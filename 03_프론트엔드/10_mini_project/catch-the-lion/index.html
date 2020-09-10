@@ -4,12 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catch-the-lion</title>
+    <title>Catch the Lion</title>
 </head>
 
-<body>
-    <script src="src/app.ts"></script>
-
+<body class="h-100 d-flex">
+    <div class="app container h-100">
+        <div class="alert alert-primary" role="alert">
+            <strong id="information">#0</strong>
+        </div>
+        <div id="upper_deadzone" class="card dead-zone mt-1 mb-3">
+            <div class="card-body"></div>
+        </div>
+        <div class="board-container container"></div>
+        <div id="lower_deadzone" class="card dead-zone mt-3">
+            <div class="card-body"></div>
+        </div>
+    </div>
+    <script src="src/index.ts"></script>
 </body>
 
 </html>
