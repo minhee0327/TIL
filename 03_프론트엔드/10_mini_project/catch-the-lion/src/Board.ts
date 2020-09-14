@@ -1,4 +1,5 @@
 import { Piece } from './Piece';
+import { Player } from './Player';
 
 export interface Position {
     row: number;
@@ -8,6 +9,9 @@ export interface Position {
 export class Cell {
     private isActive = false;
     readonly _el: HTMLElement = document.createElement('div');
+
+    // 키를 객체로 줄수있다.(HTML element사용할 것)
+    // weakmap을 사용해서 key인 HTML element가 사라지면 value도 같이 삭제된다.
 
     constructor(public readonly position: Position, private piece: Piece) {
         this._el.classList.add('cell');
@@ -39,8 +43,9 @@ export class Cell {
 export class Board {
     cells: Cell[] = [];
     _el: HTMLElement = document.createElement('div');
+    map: WeakMap<HTMLElement, Cell> = new WeakMap();
 
-    constructor() {
+    constructor(upperPlayer: Player, lowerPlayer: Player) {
         this._el.className = 'board';
 
         for (let row = 0; row < 4; row++) {
@@ -48,8 +53,14 @@ export class Board {
             rowEl.className = 'row';
             this._el.appendChild(rowEl);
             for (let col = 0; col < 3; col++) {
+                const piece =
+                    upperPlayer.getPieces().find(({ currentPosition }) => currentPosition.col === col && currentPosition.row === row) ||
+                    lowerPlayer.getPieces().find(({ currentPosition }) => currentPosition.col === col && currentPosition.row === row);
+                console.log(piece);
                 // 보드판에 기본 cell을 만드는과정, 2번째파라미터 null(아무것도 올려져 있지 않다는 뜻.)
-                const cell = new Cell({ row, col }, null);
+                const cell = new Cell({ row, col }, piece);
+
+                this.map.set(cell._el, cell);
                 this.cells.push(cell);
                 rowEl.appendChild(cell._el);
             }
