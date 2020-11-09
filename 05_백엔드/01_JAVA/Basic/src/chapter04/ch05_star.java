@@ -31,9 +31,5 @@ public class ch05_star {
 			}
 			System.out.println();
 		}
-		
-		
-		
 	}
-
 }
