@@ -10,13 +10,20 @@
 
 ### [Data structure/Algorithm](https://bit.ly/3gxql46)
 
-- [Data structure/Algorithm(python)](https://bit.ly/33Cl8VJ)
-- [Data structure/Algorithm(js)](https://bit.ly/2Pn0yAb)
-- [BOJ유형별](https://bit.ly/37GwEiJ)
-- [SWexpert](https://bit.ly/2BP8WVY)
-- [SWexpert course](https://bit.ly/33oVrpw)
-- [Programmers](https://bit.ly/2Zb5cXu)
-
+- Java
+    - BOJ
+    - Programmers
+    - SWEA
+- JavaScript
+    - Data Structure
+    - Programmers
+- Python
+    - Algorithms
+    - BOJ-유형별문제
+    - Data Structure
+    - SWEC (SW Expert Course)
+    - SWEA (SW Expert Arcademy)
+    
 ### [Frontend](https://bit.ly/2Z9IUpp)
 
 - [HTML&CSS](https://bit.ly/2Wggp85)
