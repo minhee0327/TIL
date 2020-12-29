@@ -17,5 +17,5 @@ public class Q9_x만큼간격이있는n개의숫자 {
 	            answer[i-1] = x * i;
 	        }
 	        return answer;
-	    }
+    }
 }
