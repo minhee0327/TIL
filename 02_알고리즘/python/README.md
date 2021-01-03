@@ -1,34 +1,9 @@
 # 자료구조 & 알고리즘
-
 -   [참고자료: 잔재미코딩](https://www.fun-coding.org/DS&AL1-2.html)
--   [패스트캠퍼스 강의](https://www.fastcampus.co.kr/dev_online_algo)
+
 -   ## TOC
-    -   [자료구조](https://github.com/minhee0327/TIL/tree/master/02_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DataStructures%26Algorithms_Python/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)
-        -   배열(Array)
-        -   큐(Queue)
-        -   스택(Stack)
-        -   연결리스트(Linked List)
-        -   해쉬테이블(Hash)
-        -   트리(Tree)
-        -   힙(Heap)
-        -   참고(시간복잡도)
-    -   [알고리즘](https://github.com/minhee0327/TIL/tree/master/02_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/DataStructures%26Algorithms_Python/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
-        -   정렬
-            -   버블정렬
-            -   삽입정렬
-            -   선택정렬
-            -   병합정렬
-            -   퀵정렬
-        -   재귀
-        -   동적계획법 및 분할정복
-        -   탐색
-            -   순차탐색
-            -   이진탐색
-        -   그래프
-            -   BFS
-            -   DFS
-        -   탐욕알고리즘
-        -   최단경로(다익스트라)
-        -   최소신장트리(프림, 크루스칼)
-        -   백트래킹
--   내부 폴더와 순서 다를 수 있음.
+    - [DataStructure](https://github.com/minhee0327/TIL/tree/master/02_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/python/DataStructure)
+    - [Algorithms](https://github.com/minhee0327/TIL/tree/master/02_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/python/Algorithms)
+    - [BOJ유형별문제](https://github.com/minhee0327/TIL/tree/master/02_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/python/BOJ-%EC%9C%A0%ED%98%95%EB%B3%84%EB%AC%B8%EC%A0%9C)
+    - [SWEA(SW expert Arcademy)](https://github.com/minhee0327/TIL/tree/master/02_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/python/SWexpert)
+    - [SWEC(SW expert course)](https://github.com/minhee0327/TIL/tree/master/02_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/python/SWEC)
