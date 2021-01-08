@@ -6,39 +6,40 @@
 
 ## ToC
 - ### 컴퓨터 공학 (Computer Science)
-    - 컴퓨터구조 (Computer Architecture)
-    - 운영체제 (Operating System)
-    - 시스템공학 (System Operation)
+    - [컴퓨터구조 (Computer Architecture)](https://github.com/minhee0327/TIL/tree/master/Computer%20Architecture)
+    - [운영체제 (Operating System)](https://github.com/minhee0327/TIL/tree/master/OperatingSystem)
+    - [시스템공학 (System Operation)](https://github.com/minhee0327/TIL/tree/master/SystemProgramming)
      
 - ### 데이터베이스 (DataBase)
-    - 데이터베이스 설계 모델링
-    - 데이터베이스 전처리
-    - 개론 & 실습
+    - [MySQL](https://github.com/minhee0327/TIL/tree/master/DATEBASE/MySQL)
 
 - ### 네트워크 (Network)
-    - TCP&IP 입문
-    - HTTP 입문
+    - [TCP&IP 입문](https://github.com/minhee0327/TIL/tree/master/Network/TCP%26IP%EC%9E%85%EB%AC%B8)
 
-- ### 자료구조 및 알고리즘 (DataStructure & Algorithms)
-    - Java 
-    - JavaScript
-    - Python
-  
+- ### 자료구조 및 알고리즘 (DataStructure & Algorithm)
+    - [Java](https://github.com/minhee0327/algorithm/tree/master/JAVA)
+    - [JavaScript](https://github.com/minhee0327/algorithm/tree/master/JavaScript)
+    - [Python](https://github.com/minhee0327/algorithm/tree/master/python)
+    - [참고](https://github.com/minhee0327/algorithm)
+
+- ### 프론트엔드 (Frontend)
+    - [HTML](https://github.com/minhee0327/TIL/tree/master/HTML)
+    - [CSS](https://github.com/minhee0327/TIL/tree/master/CSS)
+    - [SCSS](https://github.com/minhee0327/TIL/tree/master/SASS(SCSS))
+    - [Module](https://github.com/minhee0327/TIL/tree/master/Module)
+    - [참고]((https://github.com/minhee0327/basic-web-tutorial-fc))
+
+- ### 깃 (Git)
+    - [git 기본 사용](https://github.com/minhee0327/TIL/tree/master/GIT)
+
 - ### 언어 (Langauge)
-    - C, C++, C#
+    - [C, C++, C# 참고](https://github.com/minhee0327/CS-tutorial)
     - Java
     - JavaScript
     - Python
-    
-- ### 프론트엔드 (Frontend)
-    - HTML
-    - CSS
-    - SCSS
-    - Module
 
 - ### 프레임워크
     - Spring
     - React
     - Vue
   
-- ### 깃 (Git)
