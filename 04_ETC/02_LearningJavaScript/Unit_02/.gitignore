@@ -1,0 +1,19 @@
+# npm 디버그 기록
+# npm-debug.log*
+
+#확장자가 .log인 파일 모두 무시
+*.log*
+
+#프로젝트 의존성
+node_modules
+
+#macOS 폴더 속성
+.DS_Store
+
+#임시파일
+*.tmp
+*~
+
+#ES5파일은 추전 X
+*public/dist*
+*dist*

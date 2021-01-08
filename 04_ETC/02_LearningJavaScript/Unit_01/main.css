@@ -1,0 +1,6 @@
+/* 여기 스타일을 씁니다. */
+#mainCanvas {
+    width: 400px;
+    height: 400px;
+    border: solid 1px black;
+}

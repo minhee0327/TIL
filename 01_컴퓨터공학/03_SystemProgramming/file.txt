@@ -1,0 +1,3 @@
+/etc/dpkg/dpkg.cfg:0
+/etc/dpkg/origins/debian:0
+/etc/dpkg/origins/ubuntu:0
