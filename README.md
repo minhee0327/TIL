@@ -27,7 +27,7 @@
     - [CSS](https://github.com/minhee0327/TIL/tree/master/CSS)
     - [SCSS](https://github.com/minhee0327/TIL/tree/master/SASS(SCSS))
     - [Module](https://github.com/minhee0327/TIL/tree/master/Module)
-    - [참고]((https://github.com/minhee0327/basic-web-tutorial-fc))
+    - [참고](https://github.com/minhee0327/basic-web-tutorial-fc)
 
 - ### 깃 (Git)
     - [git 기본 사용](https://github.com/minhee0327/TIL/tree/master/GIT)
