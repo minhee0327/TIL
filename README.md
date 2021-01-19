@@ -5,6 +5,7 @@
 * since: 2020.01~
 * 오늘 하루 배운 내용을 정리하고 나중에 다시 보기!
 <<<<<<< HEAD
+<<<<<<< HEAD
 * git book 연습 차원에서 예전부터 정리하던 repository에서 복사해와서  작업했는데 꽤 나쁘지 않아서 이렇게 사용할 것 같아요!
 
 ### Rule
@@ -15,6 +16,8 @@
 
 #### 💻 Computer Science
 =======
+=======
+>>>>>>> 385b3ce (GitBook: [master] 74 pages modified)
 
 ## Rule
 
@@ -23,6 +26,9 @@
 ## ToC
 
 ### 💻 Computer Science
+<<<<<<< HEAD
+>>>>>>> 385b3ce (GitBook: [master] 74 pages modified)
+=======
 >>>>>>> 385b3ce (GitBook: [master] 74 pages modified)
 
 * **Operating System**
