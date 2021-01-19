@@ -4,14 +4,15 @@
 
 * since: 2020.01~
 * 오늘 하루 배운 내용을 정리하고 나중에 다시 보기!
+* git book 연습 차원에서 예전부터 정리하던 repository에서 복사해와서  작업했는데 꽤 나쁘지 않아서 이렇게 사용할 것 같아요!
 
-## Rule
+### Rule
 
-* 혹시 보면서 잘못되었거나, 고칠 필요가 있는 부분은 Feed Back 언제나 환영! 
+* 혹시 보면서 잘못되었거나, 고칠 필요가 있는 부분은 Feed Back 언제나 환영 이예요! 
 
-## ToC
+### ToC
 
-### 💻 Computer Science
+#### 💻 Computer Science
 
 * **Operating System**
   * [01. 운영체제 역할](https://github.com/minhee0327/gitbook/blob/master/operatingsystem/01_.md)
