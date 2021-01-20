@@ -3,7 +3,7 @@
 ### Intro
 
 * since: 2021.01.19 ~ 
-* 2020 이전 version이 궁금하다면 👉 [클릭!](https://github.com/minhee0327/TIL-v.2020)  👈
+* 2020 이전 version이 궁금하다면 👉 [클릭!](https://github.com/minhee0327/TIL2020)  👈
 * 새로 저장소를 판 이유: 
   * MD문서만 별도로 관리하기 위해.
   * Algorithm 파일이 많아져서 분리.
