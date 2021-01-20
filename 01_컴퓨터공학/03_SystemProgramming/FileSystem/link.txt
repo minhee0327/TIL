@@ -1,5 +1,0 @@
-hello mmap!wxrwxr-x 2 ubuntu ubuntu 4096 Jul 23 06:43 .
-drwxrwxr-x 8 ubuntu ubuntu 4096 Jul 23 05:15 ..
--rw-rw-r-- 1 ubuntu ubuntu    0 Jul 23 06:43 link.txt
--rwxrwxr-x 1 ubuntu ubuntu 8760 Jul 23 06:41 mmapread
--rw-rw-r-- 1 ubuntu ubuntu  864 Jul 23 06:41 mmapread.c

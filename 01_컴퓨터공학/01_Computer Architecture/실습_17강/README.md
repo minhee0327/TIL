@@ -1,3 +1,0 @@
-- QtSpim을 사용해서 register가 동작하는 방식을 확인하기!
-- 어셈블리어를(asm파일) 보면서 어떤 내용이었는지 다시 리마인드 해보기!
-- Think about Segment, register, etc

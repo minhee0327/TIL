@@ -1,6 +1,0 @@
-total 24
-drwxrwxr-x 2 ubuntu ubuntu 4096 Jul 23 07:21 .
-drwxrwxr-x 9 ubuntu ubuntu 4096 Jul 23 07:15 ..
--rw-rw-r-- 1 ubuntu ubuntu    0 Jul 23 07:21 link.txt
--rwxrwxr-x 1 ubuntu ubuntu 8496 Jul 23 07:19 stat
--rw-rw-r-- 1 ubuntu ubuntu  337 Jul 23 07:21 stat.c
