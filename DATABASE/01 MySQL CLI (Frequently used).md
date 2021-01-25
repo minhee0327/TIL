@@ -33,4 +33,4 @@
 * 윈도우 검색창에서는 services
 * 실행창 (window + R) 에서는 services.msc 입력.
 
-![image-20210120143430309](C:\Users\leefr\AppData\Roaming\Typora\typora-user-images\image-20210120143430309.png)
+[참조](https://minhee0327.gitbook.io/mini-til/undefined/untitled)
