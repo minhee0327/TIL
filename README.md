@@ -44,7 +44,9 @@
 
 ### 📈 Database
 
+* #### MySQL
 
+  * [MySQL CLI (Frequently used)](https://github.com/minhee0327/TIL/blob/master/DATABASE/01%20MySQL%20CLI%20(Frequently%20used).md)
 
 
 
