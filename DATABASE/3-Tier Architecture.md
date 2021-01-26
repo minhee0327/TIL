@@ -8,11 +8,11 @@
 
 ### 1-Tier
 
-![072714_1307_3TierArchit1](..\image\072714_1307_3TierArchit1.png)
+![072714_1307_3TierArchit1](https://github.com/minhee0327/TIL/blob/master/image/072714_1307_3TierArchit1.png)
 
 ### 2-Tier
 
-![072714_1307_3TierArchit2](..\image\072714_1307_3TierArchit2.png)
+![072714_1307_3TierArchit2](https://github.com/minhee0327/TIL/blob/master/image/072714_1307_3TierArchit2.png)
 
 * 클라이언트에서 DB 서버로 직접 데이터 입력하고 불러오는 방식 
 * file server, DBMS server등 서버와 클라이언트로 구성된 단순 분산처리.
@@ -27,7 +27,7 @@
 
 ### 3-Tier
 
-![072714_1307_3TierArchit3](..\image\072714_1307_3TierArchit2.png)
+![072714_1307_3TierArchit3](https://github.com/minhee0327/TIL/blob/master/image/072714_1307_3TierArchit3.png)
 
 - 클라이언트가 미들웨어로 메세지를 주고받으면서, 데이터베이스에 저장하여 사용하는 형태.
 
