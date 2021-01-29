@@ -24,11 +24,13 @@
 ## ToC
 
 ### 💻 Computer Science
+- #### Computer Architecture
+	- [Computer Architecture](https://github.com/minhee0327/TIL/blob/master/Computer%20architecture/Computer%20Architercure.md)
 - #### Operating System
 	
 	- [OS Intro](https://github.com/minhee0327/TIL/blob/master/OperatingSystem/01_%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%20%ED%81%B0%20%EA%B7%B8%EB%A6%BC.md)
 	- [OS History](https://github.com/minhee0327/TIL/blob/master/OperatingSystem/02_%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9CHISTORY.md)
-	- [OS Structure]()
+	- [System Structure](https://github.com/minhee0327/TIL/blob/master/Computer%20architecture/System%20Structure.md)
 	- [Scheduling](https://github.com/minhee0327/TIL/blob/master/OperatingSystem/03_%20%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EA%B5%AC%EC%A1%B0.md)
 	- [Scheduling Algorithm](https://github.com/minhee0327/TIL/blob/master/OperatingSystem/04_%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%A7%81.md)
 	- [Process State & Scheduler](https://github.com/minhee0327/TIL/blob/master/OperatingSystem/06_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%83%81%ED%83%9C%EC%99%80%20%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%9F%AC.md)
