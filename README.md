@@ -95,8 +95,9 @@
 
 * [SOLID (OOP설계원칙)](https://github.com/minhee0327/TIL/blob/master/Spring/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%84%A4%EA%B3%84%20%EC%9B%90%EC%B9%99%20(SOLID).md)
 
-
-
+---
+### 🧩 Design Pattern
+- [Template Method Pattern](https://github.com/minhee0327/TIL/tree/master/DesignPattern)
 ---
 
 ### 🐥 Front End
