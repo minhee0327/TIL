@@ -1,4 +1,4 @@
-# 01 MySQL CLI (Frequently used)
+# MySQL CLI (Frequently used)
 
 
 
