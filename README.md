@@ -50,7 +50,7 @@
 
 * #### MySQL
 
-  * [MySQL CLI (Frequently used)](https://github.com/minhee0327/TIL/blob/master/DATABASE/01%20MySQL%20CLI%20(Frequently%20used).md)
+  * [MySQL CLI (Frequently used)](https://github.com/minhee0327/TIL/blob/master/DATABASE/MySQL%20CLI%20(Frequently%20used).md)
   
   * [3-Tier Architecture](https://github.com/minhee0327/TIL/blob/master/DATABASE/3-Tier%20Architecture.md)
 
@@ -100,7 +100,7 @@
 ---
 ### 🧩 Design Pattern
 * [SOLID (OOP설계원칙)](https://github.com/minhee0327/TIL/blob/master/Spring/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%84%A4%EA%B3%84%20%EC%9B%90%EC%B9%99%20(SOLID).md)
-- [Template Method Pattern](https://github.com/minhee0327/TIL/tree/master/DesignPattern)
+- [Template Method Pattern](https://github.com/minhee0327/TIL/blob/master/DesignPattern/Template%20method%20pattern.md)
 ---
 
 ### 🐥 Front End
