@@ -51,8 +51,9 @@
 * #### MySQL
 
   * [MySQL CLI (Frequently used)](https://github.com/minhee0327/TIL/blob/master/DATABASE/MySQL%20CLI%20(Frequently%20used).md)
-  
   * [3-Tier Architecture](https://github.com/minhee0327/TIL/blob/master/DATABASE/3-Tier%20Architecture.md)
+  * [SQL Basic](https://github.com/minhee0327/TIL/blob/master/DATABASE/Basic%20SQL.md)
+  * [SQL Built-in function](https://github.com/minhee0327/TIL/blob/master/DATABASE/Built%20in%20function.md)
 
 
 
