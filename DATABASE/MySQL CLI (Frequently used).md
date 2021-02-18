@@ -4,15 +4,16 @@
 
 ## 사용자 목록, 추가 , 제거 권한 부여
 
-| 기능                          | 명령어                                                       | 사용예                                                       |
-| ----------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 서버 로그인 <br />(MySQL접속) | mysql -u [username] -p;                                      | • mysql –u root –p; <br />• password입력                     |
-| 사용자 목록 조회              | use mysql;<br />select user, host from user;                 | •mysql기본 스키마 mysql안에<br />•mysql 기본스키마인 user table에서 확인가능. |
-| 사용자 추가                   | create user {username}@{ip} identified by '{password}';      | •create user bit@localhost identified by 'bit';<br />•create user bit@123.456.% identified by 'bit'; |
-| 사용자 제거                   | drop user {username};<br />drop user 'user'@'localhost';delete from user where user={username}; | •drop 추천                                                   |
-| 권한 확인                     | show grants for {username}@{ip};                             | • show grants for bit@localhost;                             |
-| 권한 부여                     | grant {권한} privileges on {스키마}.{테이블} to {username}@{ip}; | • grant all privileges on \*.\* to bit@localhost;            |
-| 권한 제거                     | revoke {권한} privileges on {스키마}.{테이블} from {username}@{ip}; | • revoke all on bit.* from bit@localhost;                    |
+| 기능                                                         | 명령어                                                       | 사용예                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 서버 로그인 <br />(MySQL접속)                                | mysql -u [username] -p;                                      | • mysql –u root –p; <br />• password입력                     |
+| 사용자 목록 조회                                             | use mysql;<br />select user, host from user;                 | •mysql기본 스키마 mysql안에<br />•mysql 기본스키마인 user table에서 확인가능. |
+| 사용자 추가                                                  | create user {username}@{ip} identified by '{password}';      | •create user bit@localhost identified by 'bit';<br />•create user bit@123.456.% identified by 'bit'; |
+| 사용자 제거                                                  | drop user {username};<br />drop user 'user'@'localhost';delete from user where user={username}; | •drop 추천                                                   |
+| 권한 확인                                                    | show grants for {username}@{ip};                             | • show grants for bit@localhost;                             |
+| 권한 부여                                                    | grant {권한} privileges on {스키마}.{테이블} to {username}@{ip}; | • grant all privileges on \*.\* to bit@localhost;            |
+| 권한 제거                                                    | revoke {권한} privileges on {스키마}.{테이블} from {username}@{ip}; | • revoke all on bit.* from bit@localhost;                    |
+| [사용자 변경](https://stackoverflow.com/questions/22811829/how-to-switch-users-on-mysql) | system mysql -u [사용자명] -p <br />[password]               | system mysql -u madang -p<br />madang                        |
 
 
 
@@ -24,6 +25,8 @@
 | 데이터베이스 선택 | use [database];             | • database 선택                     |
 | 데이터베이스 보기 | show databases;             | • database 어떤 게 있는지 보여줌    |
 | 테이블 보기       | show tables;                | • database 에 있는 테이블 보여준다. |
+
+
 
 
 
