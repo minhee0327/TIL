@@ -152,7 +152,7 @@
 
   ---
 
-  [하드디스크 구조 자료 ]: https://gsk121.tistory.com/260(https://gsk121.tistory.com/260)
+  [하드디스크 구조 자료 ] [https://gsk121.tistory.com/260](https://gsk121.tistory.com/260)
 
   [MySQL DBMS구조] : [https://mysqldba.tistory.com/2](https://mysqldba.tistory.com/2)
 
