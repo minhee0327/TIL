@@ -56,7 +56,7 @@
   * [SQL Built-in function](https://github.com/minhee0327/TIL/blob/master/DATABASE/Built%20in%20function.md)
   * [SubQuery](https://github.com/minhee0327/TIL/blob/master/DATABASE/SubQuery.md)
   * [View](https://github.com/minhee0327/TIL/blob/master/DATABASE/VIEW.md)
-  * Index
+  * [Index](https://github.com/minhee0327/TIL/blob/master/DATABASE/Index.md)
   * [Stored Program](https://github.com/minhee0327/TIL/blob/master/DATABASE/StoredProgram.md)
 
 
