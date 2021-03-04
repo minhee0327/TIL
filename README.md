@@ -59,6 +59,7 @@
   * [Index](https://github.com/minhee0327/TIL/blob/master/DATABASE/Index.md)
   * [Stored Program](https://github.com/minhee0327/TIL/blob/master/DATABASE/StoredProgram.md)
   * [Normalization](https://github.com/minhee0327/TIL/blob/master/DATABASE/Normalization.md)
+  * [Transaction](https://github.com/minhee0327/TIL/blob/master/DATABASE/Transaction.md)
 
 
 
